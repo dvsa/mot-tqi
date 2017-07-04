@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0939247-b5b1-44c3-820e-ba495393afea" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis/govuk_prototype_kit.enc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/separator-2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/separator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/assets/images/docs/installing-mavericks-popup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/assets/images/docs/mac-home-folder-projects.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/assets/images/docs/prototype-kit-homepage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mot-prototypes.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis/govuk_prototype_kit.pub" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENCE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VERSION.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/auto-store-data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/bind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/details.polyfill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery-1.11.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/application-ie8.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/application.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/examples.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/patterns/_check-your-answers.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/patterns/_task-list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/unbranded.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/filters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/breadcrumb_examples.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/head.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/phase_banner_alpha.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/phase_banner_beta.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/propositional_navigation_alpha.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/scripts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/test/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/create-release.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/assets/javascripts/docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/assets/sass/docs-ie8.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/assets/sass/docs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/creating-routes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/install/developer-install-instructions.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/install/install-the-kit.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/install/introduction.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/install/requirements.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/install/run-the-kit.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/making-pages.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/principles.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/publishing-on-heroku.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/session.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/setting-up-git.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/tips-and-tricks.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/updating-the-kit.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/using-verify.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation/writing-css.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/documentation_routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/linting.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/documentation_template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/blank-govuk.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/blank-unbranded.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/branching.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/check-your-answers-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/confirmation-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/elements/forms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/elements/grid-layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/elements/radio-buttons-checkboxes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/elements/toggled-content.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/elements/typography.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/over-18.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/override-service-name.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/pass-data/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/pass-data/vehicle-check-answers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/pass-data/vehicle-features.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/pass-data/vehicle-registration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/pass-data/vehicle-type.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/question-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/start-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/task-list-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/template-content-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/template-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/template-partial-areas.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/template-question-page-blank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/examples/under-18.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/analytics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/breadcrumb_examples.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/examples_head.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/head.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/phase_banner_alpha.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/phase_banner_beta.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/propositional_navigation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/propositional_navigation_alpha.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/includes/scripts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/install.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/install_template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/layout_unbranded.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/views/tutorials-and-examples.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/clean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/copy-assets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/copy-modules.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/nodemon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/sass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/watch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/core_filters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/govuk_template_unbranded.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/prototype-admin/clear-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/template.env" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/mocha.opts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/sanity-checks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/test/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/views/index.html" />
+        <option value="$PROJECT_DIR$/app/config.js" />
+        <option value="$PROJECT_DIR$/app/routes.js" />
+        <option value="$PROJECT_DIR$/app/views/test/test.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1023" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mot-prototypes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v6.3.1/bin/node" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/standard" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0939247-b5b1-44c3-820e-ba495393afea" name="Default" comment="" />
+      <created>1499100178189</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1499100178189</updated>
+      <workItem from="1499100180634" duration="2346000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2346000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2863248" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/test/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
