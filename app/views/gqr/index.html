@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+	<nav id="proposition-menu">
+	  <a href="/" id="proposition-name">Garage Quality Reporting epic - TQI and performance dashboard</a>
+	</nav>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+		<h1 class="heading-xlarge">
+			<span class="heading-secondary">Prototype</span>
+			Test quality information
+		</h1>
+		{{releaseVersion | log }}
+		<p>UX Designer: <a href="mailto:d.rees@kainos.com">Dyfrig Rees</a></p>
+		<hr>
+		<p><span class="heading-small">Improving feature value, clarity of data and aligning to GOV style guide.</span></p>
+      	<p>Work in progress</p>
+		<ul class="list list-bullet">
+			<li>Performance dashboard - 
+				<a href="/gqr/gqr-performance-dashboard.html">
+					Version 1
+				</a>
+			</li>
+			<li>View TQI from site level - 
+				<a href="/gqr/gqr-vts-tqi.html">
+					Version 1
+				</a>
+			</li>
+			<li>View TQI from testers own profile - 
+				<a href="/gqr/gqr-profile-bob-thomas-arctor-tqi.html">
+					Version 1
+				</a>
+			</li>
+		</ul>
+		<hr>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

@@ -1,0 +1,337 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+	<nav id="proposition-menu">
+	  <a href="/" id="proposition-name">Mallory Archer (aedm)</a>
+	  <ul id="proposition-links">
+	    <li><a href="url-to-page-1">Home</a></li>
+	    <li><a href="url-to-page-2">Your profile</a></li>
+	    <li><a href="url-to-page-2">Sign out</a></li>
+	  </ul>
+	</nav>
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+.inline-element {
+    clear: right;
+    padding-right: 45px;
+}
+.inline-element:last-child {
+    padding-right: initial;
+}
+.key-value-list__header {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 1.1111111111;
+	font-weight: 700;
+	text-transform: none;
+	margin-top: 1.04167em
+}
+
+@media (max-width: 640px) {
+.key-value-list__header {
+	font-size: 24px;
+	line-height: 1.0416666667;
+}
+}
+
+@media (min-width: 641px) {
+.key-value-list__header {
+	margin-top: 1.25em;
+}
+}
+.key-value-list {
+	margin-top: 30px
+}
+.key-value-list__key, .key-value-list__value, .key-value-list__value--numeric, .key-value-list__value--muted {
+	width: 50%
+}
+.key-value-list__value {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.3157894737;
+	font-weight: 700;
+	text-transform: none;
+	padding-left: 15px
+}
+
+@media (max-width: 640px) {
+.key-value-list__value {
+	font-size: 16px;
+	line-height: 1.25;
+}
+}
+.key-value-list__item-action {
+	padding-left: 15px
+}
+.key-value-list__value--numeric {
+	font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.3157894737;
+	font-weight: 700;
+	text-transform: none;
+	padding-left: 15px;
+	letter-spacing: 0.03em
+}
+
+@media (max-width: 640px) {
+.key-value-list__value--numeric {
+	font-size: 16px;
+	line-height: 1.25;
+}
+}
+.key-value-list__value--muted {
+	color: #6f777b;
+	padding-left: 15px
+}
+.key-value-list__meta {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: 400;
+	text-transform: none;
+	color: #6f777b;
+	display: block
+}
+
+@media (max-width: 640px) {
+.key-value-list__meta {
+	font-size: 14px;
+	line-height: 1.1428571429;
+}
+}
+.result-table__meta {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: 400;
+	text-transform: none;
+	color: #6f777b;
+	display: block
+}
+.table-caption {
+	text-align: left;
+}
+.content-navigation {
+    margin-top: 30px;
+}
+.object-svg {
+	display: block;
+	margin-bottom: 30px;
+}
+.data-wrapper {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.data-item.bold-large {
+	padding-bottom: 8px;
+}
+.line-break {
+	display: block;
+}
+.text-center {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 90px;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.download-block {
+	margin-bottom: 60px;
+}
+</style>
+
+<main id="content" role="main">
+
+	<div class="breadcrumbs">
+	  <ol>
+	    <li><a href="/">Home</a></li>
+	    <li><a href="/#">Venture Industries</a></li>
+	    <li><a href="/#">John's Garage</a></li>
+	    <li><a href="/gqr/gqr-vts-tqi.html">Test quality information</a></li>
+	    <li>Bob Thomas Arctor</li>
+	  </ol>
+	</div>
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Vehicle Testing Station</span>
+		Bob Thomas Arctor
+		<span class="heading-secondary">Failures by category</span>
+      </h1>{{releaseVersion | log }}
+      
+      	<h2 class="heading-medium">Tests done in April 2017</h2>
+  		<form action="/gqr/gqr-vts-tqi-6-months-loading" method="get">
+      		<h2 class="heading-medium">Choose a date range</h2>
+			<fieldset>
+
+				<legend class="visually-hidden">Choose a date range</legend>
+				<div class="form-group">
+				    <div class="multiple-choice inline-element">
+				      <input id="radio-1" type="radio" name="radio-group" value="Last month" checked="checked">
+				      <label for="radio-1">Last month</label>
+				    </div>
+				    <div class="multiple-choice inline-element">
+				      <input id="radio-2" type="radio" name="radio-group" value="Last 3 months">
+				      <label for="radio-2">Last 3 months</label>
+				    </div>
+				    <div class="inline-element"><input type="submit" class="button" value="Update results"></div>
+				</div>
+
+			</fieldset>
+		</form>
+
+		<h3 class="key-value-list__header">
+			Group B
+			<span class="key-value-list__meta">Class 3, 4, 5 and 7</span>
+      	</h3>
+      	
+      	<div class="grid-row data-wrapper">
+      		<div class="column-one-quarter">
+				<div class="data">
+					<span class="data-item bold-xxlarge">102</span>
+					<span class="data-item bold-xsmall">initial tests done</span>
+				</div>
+			</div>
+			<div class="column-one-quarter">
+				<div class="data">
+					<span class="data-item bold-xxlarge">12y<span class="visually-hidden">ear</span></span>
+					<span class="data-item bold-xsmall">average vehicle age</span>
+				</div>
+			</div>
+			<div class="column-one-quarter">
+				<div class="data">
+					<span class="data-item bold-xxlarge">35m<span class="visually-hidden">inute</span></span>
+					<span class="data-item bold-xsmall">average test time</span>
+				</div>
+			</div>
+			<div class="column-one-quarter">
+				<div class="data">
+					<span class="data-item bold-xxlarge">24%</span>
+					<span class="data-item bold-xsmall">initial tests failed</span>
+				</div>
+			</div>
+		</div>
+
+      	<table>
+      		<caption class="heading-medium table-caption">Failures by category</caption>
+			<thead>
+				<tr>
+					<th scope="col">Categories</th>
+					<th class="numeric" scope="col">Tester</th>
+					<th class="numeric" scope="col">Site average</th>
+					<th class="numeric" scope="col">National average</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Body, structure and general items</th>
+					<td class="numeric">5%</td>
+					<td class="numeric">5%</td>
+					<td class="numeric">4%</td>
+				</tr>
+				<tr>
+					<th scope="row">Brakes</th>
+					<td class="numeric">19%</td>
+					<td class="numeric">19%</td>
+					<td class="numeric">28%</td>
+				</tr>
+				<tr>
+					<th scope="row">Drivers view of the road</th>
+					<td class="numeric">20%</td>
+					<td class="numeric">20%</td>
+					<td class="numeric">19%</td>
+				</tr>
+				<tr>
+					<th scope="row">Driving controls and speed limiters</th>
+					<td class="numeric">0%</td>
+					<td class="numeric">0%</td>
+					<td class="numeric">0%</td>
+				</tr>
+				<tr>
+					<th scope="row">Exhaust, fuel and emissions</th>
+					<td class="numeric">9%</td>
+					<td class="numeric">9%</td>
+					<td class="numeric">11%</td>
+				</tr>
+				<tr>
+					<th scope="row">Lamps, reflectors and electrical equipment</th>
+					<td class="numeric">56%</td>
+					<td class="numeric">56%</td>
+					<td class="numeric">51%</td>
+				</tr>
+				<tr>
+					<th scope="row">Motor tricycles and quadricycles</th>
+					<td class="numeric">56%</td>
+					<td class="numeric">56%</td>
+					<td class="numeric">51%</td>
+				</tr>
+				<tr>
+					<th scope="row">Motor tricycles and quadricycles</th>
+					<td class="numeric">0%</td>
+					<td class="numeric">0%</td>
+					<td class="numeric">0%</td>
+				</tr>
+				<tr>
+					<th scope="row">Registration plates and VIN</th>
+					<td class="numeric">0%</td>
+					<td class="numeric">0%</td>
+					<td class="numeric">2%</td>
+				</tr>
+				<tr>
+					<th scope="row">Road wheels</th>
+					<td class="numeric">0%</td>
+					<td class="numeric">0%</td>
+					<td class="numeric">1%</td>
+				</tr>
+				<tr>
+					<th scope="row">Seat belts and supplementary restraint systems</th>
+					<td class="numeric">5%</td>
+					<td class="numeric">5%</td>
+					<td class="numeric">5%</td>
+				</tr>
+				<tr>
+					<th scope="row">Steering</th>
+					<td class="numeric">8%</td>
+					<td class="numeric">8%</td>
+					<td class="numeric">8%</td>
+				</tr>
+				<tr>
+					<th scope="row">Suspension</th>
+					<td class="numeric">29%</td>
+					<td class="numeric">29%</td>
+					<td class="numeric">35%</td>
+				</tr>
+				<tr>
+					<th scope="row">Towbars</th>
+					<td class="numeric">0%</td>
+					<td class="numeric">0%</td>
+					<td class="numeric">1%</td>
+				</tr>
+				<tr>
+					<th scope="row">Tyres</th>
+					<td class="numeric">26%</td>
+					<td class="numeric">26%</td>
+					<td class="numeric">21%</td>
+				</tr>
+			</tbody>
+		</table>
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<nav class="content-navigation">
+				<p><a href="/gqr/gqr-vts-tqi.html">Return to test quality information</a></p>
+			</nav>
+		</div>
+  	</div>
+
+</main>
+
+{% endblock %}
+
+
