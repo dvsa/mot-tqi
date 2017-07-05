@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check MOT history
+{% endblock %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li class="">
+        <a href="/">Home</a>
+    </li>
+
+    <li class="">
+        <a href="/browse/driving">Driving and transport</a>
+    </li>
+
+    <li class="">
+        <a href="/browse/driving/vehicle-tax-mot-insurance">Vehicle tax, MOT and insurance</a>
+    </li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Check the MOT history of a vehicle
+      </h1>
+
+      <p>You can see if an MOT certificate is genuine by checking its details against what’s recorded.</p>
+
+    <p>You’ll need the vehicle’s:</p>
+
+      <ul class="list list-bullet">
+        <li>make</li>
+  <li>registration number (number plate)</li>
+      </uL>
+
+     
+      <p>
+        <a class="button button-start" href="enter-reg" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>You can only get test results from 2005 onwards for tests done in England, Scotland or Wales.</p>
+
+      <p style="font-size: 16px; color: #6f777b;">Last updated: 16 June 2017</p>
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Vehicle tax, MOT and insurance</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="/check-mot-status">Check the MOT status of a vehicle</a></li>
+            <li><a href="/checks-when-buying-a-used-car">Check you’re not buying a stolen vehicle</a></li>
+            <li><a href="/getting-an-mot">Getting an MOT</a></li>
+            <li><a href="/replacing-lost-damaged-mot-certificate">Replace a lost or damaged MOT certificate</a></li>
+            <li class="related-items-more">
+              <a href="/browse/driving/vehicle-tax-mot-insurance" class="bold-xsmall">
+                More
+</a>            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+
