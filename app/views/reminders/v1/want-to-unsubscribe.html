@@ -17,16 +17,16 @@
 
             <div>
                 <h1 class="heading-large">
-                    One more step
+                    Are you sure you want to unsubscribe?
                 </h1>
-
-                <p>
-                    Check your inbox <b>({{ data['email']}})</b> and click the link in the email from GOV.UK to activate your MOT reminder.
-                </p>
-
             </div>
 
-         </div>
+            <p>You’ll stop getting MOT reminders at {{ data['email'] }} for {{ data['VRM'] }}.</p>
+
+            <div style="margin-top: 30px;"><p><a class="button" href="unsubscribed">Continue</a></p></div>
+
+
+        </div>
     </div>
 </main>
 
