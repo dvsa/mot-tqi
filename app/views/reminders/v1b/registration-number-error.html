@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  MOT Reminder - what is registration number
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+      {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <h1 class="heading-xlarge">
+                What is the vehicle’s registration number?
+            </h1>
+
+          <form action="registration-number-error" method="get" class="form">
+            
+              <div class="error-summary">
+                  <h1 class="heading-medium error-summary-heading">
+                      You can't sign up for a reminder — MOT is due    
+                  </h1>
+
+                  <p>
+                     Book in for a test now. After you get MOT, you can sign up for a reminder.
+                  </p>
+              </div>
+
+              <div class="form-group form-group-error">
+                  <label for="registration-number">
+                      <span class="form-label-bold">Registration (number plate)</span>
+                      <span class="error-message">This vehicle's MOT is due</span>
+                  </label>
+                  <input type="text" name="VRM" class="form-control" value="{{ data['VRM'] }}">
+              </div>   
+
+
+              <p><input class="button" type="submit" href="registration-number-error" value="Continue"></p>
+
+              <p><a href="index">Back</a></p>
+
+
+          </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+
