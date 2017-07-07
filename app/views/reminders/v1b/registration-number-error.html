@@ -21,15 +21,10 @@
 
           <div class="error-summary">
                   <h1 class="heading-medium error-summary-heading">
-                      You can't sign up for a reminder — MOT is due    
+                      This vehicle doesn’t have a valid MOT   
                   </h1>
 
-                  <p>
-                     Book in for a test now
-                  </p>
-                  <p>
-                     After the vehicle have passed MOT, you can sign up for a reminder.
-                  </p>
+                  <p>You can only sign up for a reminder if the vehicle’s MOT is in date</p>
               </div>
 
            <h1 class="heading-large">
@@ -41,7 +36,7 @@
               <div class="form-group form-group-error">
                   <label for="registration-number">
                       <span class="form-label-bold">Registration (number plate)</span>
-                      <span class="error-message">This vehicle's MOT is due</span>
+                      <span class="error-message">This vehicle doesn’t have a valid MOT</span>
                   </label>
                   <input type="text" name="VRM" class="form-control" value="{{ data['VRM'] }}">
               </div>   
