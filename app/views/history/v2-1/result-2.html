@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-Check MOT history
+{% block bar_heading %}
+  Check MOT history
 {% endblock %}
 
 {% block content %}
@@ -15,11 +15,10 @@ Check MOT history
 <div class="banner expired">
   
   <h2 class="heading-medium">
-  The MOT of this vehicle has expired
+  This vehicle’s MOT has expired
   </h2>
   
-  <p>You can be fined up to £1,000 for driving a vehicle without a valid MOT.
-  <br><a href="https://www.gov.uk/getting-an-mot">How to get an MOT</a>.</p>
+  <p>You can be fined up to £1000 for driving without a valid MOT</p>
   
 </div>
 
@@ -42,7 +41,7 @@ Check MOT history
         27 May 2017
       </h1>
 
-      <a href="">Get a reminder email</a>
+      <a href="/reminders/v1/index">Get a reminder email</a>
     </div>
 
     <div class="column-two-thirds">
@@ -94,7 +93,7 @@ Check MOT history
     <summary><span class="summary">Incorrect details?</span></summary>
     <div class="panel panel-border-narrow">
       <p>
-        If any of the vehicle details or MOT history is wrong, <a href="">contact DVSA</a>
+        If you think the MOT expiry date or any of the vehicle details are wrong, <a href="">contact DVSA</a>
 
       </p>
     </div>
