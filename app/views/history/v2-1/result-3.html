@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-Check MOT history
+{% block bar_heading %}
+  Check MOT history
 {% endblock %}
 
 {% block content %}
@@ -15,12 +15,10 @@ Check MOT history
 <div class="banner expired">
   
   <h2 class="heading-medium">
-  There may be something wrong with your vehicle.
+  This vehicle might have been recalled for a safety reason
   </h2>
   
-  <p>Please check the manufacture <a href="">recall information</a></p>
-  
-  
+  <p><a href="https://www.themotorombudsman.org/vehicle-recalls">Check if there’s a recall</a> that hasn’t been fixed</p>
   
 </div>
 
@@ -43,7 +41,7 @@ Check MOT history
         27 May 2017
       </h1>
 
-      <a href="">Get a reminder email</a>
+      <a href="/reminders/v1/index">Get a reminder email</a>
     </div>
 
     <div class="column-two-thirds">
@@ -95,7 +93,7 @@ Check MOT history
     <summary><span class="summary">Incorrect details?</span></summary>
     <div class="panel panel-border-narrow">
       <p>
-        If any of the vehicle details or MOT history is wrong, <a href="">contact DVSA</a>
+        If you think the MOT expiry date or any of the vehicle details are wrong, <a href="">contact DVSA</a>
 
       </p>
     </div>

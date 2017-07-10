@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-  MOT Reminder - what is registration number
+{% block bar_heading %}
+  Get an annual MOT reminder
 {% endblock %}
 
 {% block content %}
@@ -15,21 +15,22 @@
     <div class="grid-row">
         <div class="column-two-thirds">
 
-            <h1 class="heading-xlarge">
-                What is the vehicle’s registration number? 
-            </h1>
-
           <form action="registration-number-error" method="get" class="form">
+            <a class="link-back" href="index">Back</a>
+          <h1 class="heading-large">
+                What is the vehicle’s registration number?  
+            </h1>
             
               <div class="form-group">
-                  <label for="registration-number">Registration (number plate)</label></br>
+                  <label class="form-label-bold" for="registration-number">Registration number (number plate)</label>
+                  <span class="form-hint">For example, CU57ABC</span>
                   <input type="text" name="VRM" class="form-control">
               </div>   
 
 
               <p><input class="button" type="submit" href="registration-number-error" value="Continue"></p>
 
-              <p><a href="index">Back</a></p>
+              
 
 
           </form>

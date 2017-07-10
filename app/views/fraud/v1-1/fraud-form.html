@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Report MOT fraud
+{% endblock %}
+{% block content %}
+
+
+
+<main id="content" role="main">
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+
+
+
+     
+     
+
+     <form action="success" method="post" class="form">
+<a class="link-back" href="index">Back</a>
+    <h1 class="form-title heading-large">
+      Report MOT fraud
+    </h1>
+
+    <p>Give as much information as possible to help DVSA investigate.</p>
+
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Name of the garage or person involved</label>
+
+      <input type="text" class="form-control" id="full-name">
+    </div>
+
+    
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Address of the garage or person involved</label>
+<span class="form-hint">Include at least the street and town</span>
+      <input type="text" class="form-control" id="full-name">
+    </div>
+
+    <!-- Full name -->
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Registration number of the vehicle involved</label>
+<span class="form-hint">For example, CU57ABC</span>
+      <input type="text" class="form-control" id="full-name" style="text-transform: uppercase;">
+    </div>
+
+    
+
+
+     <div class="form-group">
+      <label class="form-label-bold" for="full-name">About the incident</label>
+<span class="form-hint">Give a detailed description of what happened</span>
+      <textarea type="text" class="form-control" id="full-name" rows="6"></textarea>
+    </div>
+
+    
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+
+    </form>
+
+     
+      
+
+   
+
+</main>
+
+{% endblock %}
+
+
