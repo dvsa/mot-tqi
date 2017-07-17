@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+    {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <div class="govuk-box-highlight">
+                <h1 class="bold-large">
+                    You’ve signed up for an MOT reminder
+                </h1>
+
+                <p>
+                    You’ll get an email one month before your MOT is due. 
+                </p>
+            </div>
+                
+            <div>
+                <p>You can add a reminder to your calendar — <a href="#">Google</a>, <a href="#">Outlook</a> or <a href="#">iCal</a>.</p>
+            </div>
+
+            <h2 class="heading-medium">
+                What happens next?
+            </h3>
+
+            <p>
+                We’ve sent you a confirmation email.
+            </p>
+
+            <p>
+                You’ll get an annual reminder a month before your MOT is due, and again 2 weeks later if you don’t have your MOT yet.
+            </p>
+
+            <p>
+                If you want to unsubscribe at any time, click the link in the confirmation email or reminder email.
+            </p>
+
+         </div>
+    </div>
+</main>
+
+{% endblock %}
+
+
