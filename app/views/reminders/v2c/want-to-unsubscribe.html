@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+    {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <div>
+                <h1 class="heading-large">
+                    Are you sure you want to unsubscribe?
+                </h1>
+            </div>
+
+            <!--
+                <p>You’ll stop getting MOT reminders at {{ data['email'] }} for {{ data['VRM'] }}.</p>  
+            -->
+
+            <p>You’ll stop getting MOT reminders at uxkainos@gmail.com for NA6I RDO.</p>
+
+            <div style="margin-top: 30px;"><p><a class="button" href="unsubscribed">Continue</a></p></div>
+
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+
