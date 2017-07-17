@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+      {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <a class="link-back" href="index">Back</a>
+           
+            <form action="registration-number-error" method="get" class="form">
+
+            <div class="notice form-group">
+                
+                <i class="icon icon-important">
+                    <span class="visually-hidden">Information</span>
+                </i>
+                
+                <strong class="bold-small">
+                    This vehicle doesn't have valid MOT
+                </strong>
+
+            </div>
+
+            <div>
+
+                <p>
+                    You can only sign up for a reminder if the vehicle’s MOT is in date
+                </p>
+
+                <p>
+                    This vehicle may be less than 3 years old. Its first MOT will be due 3 years after the date of registration.
+                </p>
+                
+            </div>
+
+            <h1 class="heading-large">
+                What is the vehicle’s registration number?
+            </h1>
+            
+            <div class="form-group form-group-error">
+                <label for="registration-number">
+                    <span class="form-label-bold">Registration (number plate)</span>
+                    <span class="error-message">This vehicle doesn’t have a valid MOT</span>
+                </label>
+
+                <input type="text" name="VRM" class="form-control" value="{{ data['VRM'] }}" style="text-transform: uppercase;">
+
+            </div>   
+
+            <p><input class="button" type="submit" href="registration-number-error" value="Continue"></p>
+
+          </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+
