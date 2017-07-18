@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+    {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <div>
+                <h1 class="heading-large">
+                    One more step
+                </h1>
+
+                <p>
+                    We sent SMS with activation code to your number {{ data['phone'] }}. Enter the code below to activate your reminder. 
+                </p>
+
+                <div class="panel panel-border-wide">
+                    Please wait for the SMS<br>
+                    It can sometimes take several minutes for SMS to arrive.
+                </div>
+
+
+                <form action="signed-up-phone" method="get">
+                    <div class="form-group">
+                        <label for="code">Code from SMS</label>
+                        <input type="text" name="code">
+                    </div>
+
+                    <p><input class="button" type="submit" href="your-details" value="Continue"></p>
+                </form>
+
+            </div>
+
+         </div>
+    </div>
+</main>
+
+{% endblock %}
+
+
