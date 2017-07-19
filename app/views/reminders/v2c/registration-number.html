@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+      {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+          
+
+          <form action="email-or-text" method="get" class="form">
+
+           <a class="link-back" href="index">Back</a>
+          <h1 class="heading-large">
+                What is the vehicle’s registration number?  
+            </h1>
+            
+              <div class="form-group">
+                  <label for="registration-number">Registration number (number plate)</label>
+                  <span class="form-hint">For example, CU57ABC</span>
+                  <input type="text" name="VRM" class="form-control" style="text-transform: uppercase;" autocomplete="off">
+              </div>   
+
+
+              <p><input class="button" type="submit" href="email-or-text" value="Continue"></p>
+
+              
+
+
+          </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+

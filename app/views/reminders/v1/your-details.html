@@ -1,80 +1,104 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-  MOT Reminder - vehicle details
+{% block bar_heading %}
+Get an annual MOT reminder
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
 
-    <div id="phase_banner_beta">  
+  <div id="phase_banner_beta">  
     {% include "includes/phase_banner_beta.html" %}
-    </div>
+  </div>
 
-    <div class="grid-row">
-        <div class="column-two-thirds">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div>
+        <h1 class="heading-large">
+          Check your details
+        </h1>
+
+        <p>Make sure the vehicle and your email address are correct.</p>
+      </div>
+
+      <form action="confirm-your-email" method="get" class="form">
+
+        <div>
+          <div>
+            <h2 class="heading-medium">Vehicle details</h2>
+          </div>
+
+          <dl class="govuk-check-your-answers cya-questions-short">
+            <div>
+              <dt class="cya-question">Registration number</dt>
+              <dd class="cya-answer" style="text-transform: uppercase;">{{ data['VRM'] }}</dd>
+              <dd class="cya-change"><a href="#">Change</a></dd>
+            </div>    
+            <div>
+              <dt class="cya-question">Make</dt>
+              <dd class="cya-answer">Vauxhall</dd>
+              <dd class="cya-change"><a href="#"></a></dd>
+            </div>    
+            <div>
+              <dt class="cya-question">Model</dt>
+              <dd class="cya-answer">Astra</dd>
+              <dd class="cya-change"><a href="#"></a></dd>
+            </div> 
+            <div>
+              <dt class="cya-question">Colour</dt>
+              <dd class="cya-answer">Black</dd>
+              <dd class="cya-change"><a href="#"></a></dd>
+            </div>    
+            <div>
+              <dt class="cya-question">Year of manufacture</dt>
+              <dd class="cya-answer">2011</dd>
+              <dd class="cya-change"><a href="#"></a></dd>
+            </div>  
 
             <div>
-                <h1 class="heading-large">
-                    Check your details
-                </h1>
+              <dt class="cya-question">MOT expiry date</dt>
+              <dd class="cya-answer">7 August 2018</dd>
+              <dd class="cya-change"><a href="#"></a></dd>
+            </div>    
+          </dl>
 
-                <p>Make sure the vehicle and your email address are correct.</p>
-            </div>
+          <br>
+          <div class="form-group">
+            <details>
+              <summary><span class="summary">Incorrect details?</span></summary>
+              <div class="panel panel-border-narrow">
+                <p>
+                  If you think any of the vehicle details or the MOT expiry date are wrong, <a href="">contact DVSA</a>
 
-          <form action="confirm-your-email" method="get" class="form">
+                </p>
+              </div>
+            </details>
+          </div>
+
+
 
           <div>
-              <div>
-                  <h2 class="heading-medium">Vehicle details</h2>
-              </div>
-
-              <dl class="govuk-check-your-answers cya-questions-short">
-                  <div>
-                      <dt class="cya-question">Registration number</dt>
-                      <dd class="cya-answer">{{ data['VRM'] }}</dd>
-                      <dd class="cya-change"><a href="#">Change</a></dd>
-                  </div>    
-                  <div>
-                      <dt class="cya-question">Make</dt>
-                      <dd class="cya-answer">Vauhall</dd>
-                      <dd class="cya-change"><a href="#"></a></dd>
-                  </div>    
-                  <div>
-                      <dt class="cya-question">Model</dt>
-                      <dd class="cya-answer">Insignia</dd>
-                      <dd class="cya-change"><a href="#"></a></dd>
-                  </div>    
-                  <div>
-                      <dt class="cya-question">Year of manufacture</dt>
-                      <dd class="cya-answer">2015</dd>
-                      <dd class="cya-change"><a href="#"></a></dd>
-                  </div>    
-              </dl>
-
-
-
-              <div>
-                  <h2 class="heading-medium">Your details</h2>
-              </div>
-
-              <dl class="govuk-check-your-answers cya-questions-short">
-                  <div>
-                      <dt class="cya-question">Email address</dt>
-                      <dd class="cya-answer">{{ data['email'] }}</dd>
-                      <dd class="cya-change"><a href="#">Change</a></dd>
-                  </div>    
-              </dl>
+            <h2 class="heading-medium">Your details</h2>
           </div>
+
+          <dl class="govuk-check-your-answers cya-questions-short">
+            <div>
+              <dt class="cya-question">Email address</dt>
+              <dd class="cya-answer">{{ data['email'] }}</dd>
+              <dd class="cya-change"><a href="#">Change</a></dd>
+            </div>    
+          </dl>
+        </div>
 
         <div style="margin-top: 30px;"><p><input class="button" type="submit" value="Continue"></p></div>
 
-        </form>
+      </form>
 
 
-        </div>
     </div>
+  </div>
 </main>
 
 {% endblock %}

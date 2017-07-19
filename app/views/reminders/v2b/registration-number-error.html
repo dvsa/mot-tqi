@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+      {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <a class="link-back" href="index">Back</a>
+           
+            <form action="registration-number-error" method="get" class="form">
+
+            <div class="notice form-group">
+                
+                <i class="icon icon-important">
+                    <span class="visually-hidden">Information</span>
+                </i>
+                
+                <strong class="bold-small">
+                    You can’t get an MOT reminder
+                </strong>
+
+            </div>
+
+            <div>
+
+                <p>
+                    As this vehicle doesn’t have a valid MOT, you can’t sign up for a reminder. <a href="https://www.gov.uk/check-mot-status">Check the vehicle’s MOT status</a>
+                </p>
+
+            </div>
+
+            <h1 class="heading-large">
+                What is the vehicle’s registration number?
+            </h1>
+            
+            <div class="form-group">
+                <label for="registration-number">
+                    <span class="form-label-bold">Registration (number plate)</span>
+                </label>
+
+                <input type="text" name="VRM" class="form-control" value="{{ data['VRM'] }}" style="text-transform: uppercase;">
+
+            </div>   
+
+            <p><input class="button" type="submit" href="registration-number-error" value="Continue"></p>
+
+          </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+

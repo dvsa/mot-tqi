@@ -1,0 +1,193 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Check MOT history
+{% endblock %}
+
+{% block content %}
+
+
+
+<main id="content" role="main">
+
+
+<a class="link-back" href="enter-reg">Back</a>
+<!-- <div class="banner advice">
+  
+  <h2 class="heading-medium">
+  The MOT of this vehicle is expiring soon on 9 February 2018
+  </h2>
+  
+  <p>You can sign up for an <a href="">email reminder</a></p>
+  
+</div> -->
+
+<div class="banner expired">
+  
+  <h2 class="heading-medium">
+  This vehicle’s MOT has expired
+  </h2>
+  
+  <p>You can be fined up to £1000 for driving without a valid MOT</p>
+  
+</div>
+
+
+  <h1 class="heading-xlarge" style="margin-bottom: 20px;">
+    <span class="heading-secondary">Vehicle</span>
+    Audi A5
+  </h1>
+
+
+<div class="grid-row">
+
+    <div class="column-third">
+
+
+
+      <h1 class="heading-large" style="margin-top: 0px;">
+        <span class="heading-secondary">MOT valid until</span>
+        29 October 2016
+      </h1>
+
+      <a href="/reminders/v1/index">Get a reminder email</a>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large" style="margin-top: 0px;">
+        <span class="heading-secondary">Registration</span>
+        AK62NBF
+      </h1>
+
+      <br>
+
+      <div class="grid-row">
+        <div class="column-one-third">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.4em;">
+            <span class="heading-secondary">Fuel type</span>
+            Diesel
+          </h1>
+        </div>
+        <div class="column-one-third">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.4em;">
+            <span class="heading-secondary">Colour</span>
+            Black
+          </h1>
+        </div>
+        <div class="column-one-third">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.4em;">
+            <span class="heading-secondary">Date registered</span>
+            26 October 2012
+          </h1>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+<br>
+<a class="button" href="enter-reg">Check another vehicle</a>
+
+<br>
+<br>
+<div class="form-group">
+  <details>
+    <summary><span class="summary">Incorrect details?</span></summary>
+    <div class="panel panel-border-narrow">
+      <p>
+        If you think the MOT expiry date or any of the vehicle details are wrong, <a href="">contact DVSA</a>
+
+      </p>
+    </div>
+  </details>
+</div>
+<br>
+
+
+ <!-- <h1 class="heading-large" style="margin-top: 0px;">
+        <span class="heading-secondary">MOT valid until</span>
+        9 February 2018
+      </h1> -->
+
+      
+<h2 class="heading-large">MOT history</h2>
+
+
+
+  <!-- test start -->
+
+
+  <div class="grid-row">
+
+    <div class="column-third">
+    <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Date tested</span>
+            30 October 2015
+          </h1>
+      <h1 class="heading-large" style="margin-top: 0px; font-size: 3.5em; color: #00823B;">PASS</h1>
+
+      
+
+    </div>
+
+    <div class="column-two-thirds">
+
+
+      <div class="grid-row">
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Mileage</span>
+            82,603
+          </h1>
+        </div>
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em" style="font-size: 1.05em;">Expiry date</span>
+            29 October 2016
+          </h1>
+        </div>
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Test location</span>
+            Halfords Autocentre<br>160 Bromley Rd<br>London<br>SE6 2NZ
+          </h1>
+        </div>
+
+        <div class="column-one-half">
+
+        
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">MOT test number</span>
+            5862 5755 8618
+          </h1>
+        </div>
+
+
+
+      </div>
+
+      
+    </div>
+
+
+  </div>
+
+  <!-- test end -->
+
+
+
+</main>
+
+{% endblock %}
+
+
