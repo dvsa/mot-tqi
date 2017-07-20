@@ -21,11 +21,11 @@
                 </h1>
 
                 <p>
-                    We sent SMS with activation code to your number {{ data['phone'] }}. Enter the code below to activate your reminder. 
+                    We sent SMS with 6 digit code to your mobile {{ data['phone'] }}. Enter this code in the field below to activate your reminder. 
                 </p>
 
                 <div class="panel panel-border-wide">
-                    Please wait for the SMS<br>
+                    SMS didn't arrive in several minutes? <a href="#">Resend the SMS</a>.<br>
                     It can sometimes take several minutes for SMS to arrive.
                 </div>
 
@@ -33,7 +33,7 @@
                 <form action="signed-up-phone" method="get">
                     <div class="form-group">
                         <label for="code">Code from SMS</label>
-                        <input type="text" name="code">
+                        <input type="text" name="code" maxlength="6">
                     </div>
 
                     <p><input class="button" type="submit" href="your-details" value="Continue"></p>
