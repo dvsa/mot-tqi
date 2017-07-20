@@ -1,7 +1,7 @@
 cd{% extends "layout.html" %}
 
 {% block bar_heading %}
-  Check MOT history
+Check MOT history
 {% endblock %}
 
 {% block content %}
@@ -11,17 +11,17 @@ cd{% extends "layout.html" %}
 <main id="content" role="main">
 
 
-<a class="link-back" href="enter-reg">Back</a>
+  <a class="link-back" href="enter-reg">Back</a>
 
 
 
- <h1 class="heading-xlarge" style="margin-bottom: 20px;">
+  <h1 class="heading-xlarge" style="margin-bottom: 20px;">
     <span class="heading-secondary">Vehicle</span>
     Vauxhall Corsa
   </h1>
 
 
-<div class="grid-row">
+  <div class="grid-row">
 
     <div class="column-third">
 
@@ -32,16 +32,18 @@ cd{% extends "layout.html" %}
         28 March 2018
       </h1>
 
-      <div class="form-group">
-  <details>
-    <summary><span class="summary">About this date</span></summary>
-    <div class="panel panel-border-narrow">
-      <p>If this vehicle is a taxi, ambulance or private passenger vehicle over 9 seats, it will need to be tested earlier, at one year after the registration date</p>
-    </div>
-  </details>
-</div>
+      <p style="margin-bottom: 10px!important;"><a href="">Get a reminder email</a></p>
 
-      
+      <div class="form-group">
+        <details>
+          <summary><span class="summary">About this date</span></summary>
+          <div class="panel panel-border-narrow">
+            <p>If this vehicle is a taxi, ambulance or private passenger vehicle over 9 seats, it will need to be tested earlier, at one year after the registration date</p>
+          </div>
+        </details>
+      </div>
+
+
     </div>
 
     <div class="column-two-thirds">
@@ -85,39 +87,39 @@ cd{% extends "layout.html" %}
   </div>
 
 
-<br>
-<a class="button" href="enter-reg">Check another vehicle</a>
+  <br>
+  <a class="button" href="enter-reg">Check another vehicle</a>
 
-<br>
-<br>
-<div class="form-group">
-  <details>
-    <summary><span class="summary">Incorrect details?</span></summary>
-    <div class="panel panel-border-narrow">
-      <p>
-        If you think the MOT expiry date or any of the vehicle details are wrong, <a href="">contact DVSA</a>
+  <br>
+  <br>
+  <div class="form-group">
+    <details>
+      <summary><span class="summary">Incorrect details?</span></summary>
+      <div class="panel panel-border-narrow">
+        <p>
+          If you think the MOT expiry date or any of the vehicle details are wrong, <a href="">contact DVSA</a>
 
-      </p>
-    </div>
-  </details>
-</div>
-<br>
-   
-
-
-
-
-<h2 class="heading-large">MOT history</h2>
-      
-<p>This vehicle hasn’t had its first MOT.</p>
-
-
-
+        </p>
+      </div>
+    </details>
   </div>
+  <br>
 
-  <!-- test end -->
 
-  
+
+
+
+  <h2 class="heading-large">MOT history</h2>
+
+  <p>This vehicle hasn’t had its first MOT.</p>
+
+
+
+</div>
+
+<!-- test end -->
+
+
 
 
 </main>
