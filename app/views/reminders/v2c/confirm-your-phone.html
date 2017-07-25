@@ -21,22 +21,27 @@
                 </h1>
 
                 <p>
-                    We sent SMS with 6 digit code to your number <span style="font-weight: bold;">{{ data['phone'] }}</span>. Enter this code in the field below to activate your reminder. 
+                    We sent you a text message with a 6-digit code. Enter the code below to activate your reminder. 
                 </p>
 
-                <div class="panel panel-border-wide">
-                    SMS didn't arrive in several minutes? <a href="#">Resend the SMS</a>.<br>
-                    It can sometimes take several minutes for SMS to arrive.
+                 <form action="signed-up-phone" method="get">
+                    <div class="form-group">
+                        <label for="code">Code from text message</label>
+                        <input type="text" name="code" maxlength="6">
+                    </div>
+
+                <div class="form-group">
+                <details>
+                    <summary><span class="summary">Text didn’t arrive?</span></summary>
+                    <div>
+                        It can take a couple of minutes for the text to arrive. <a href="#">Resend the text</a>
+                    </div>
+                </details>
                 </div>
 
 
-                <form action="signed-up-phone" method="get">
-                    <div class="form-group">
-                        <label for="code">Code from SMS</label>
-                        <input type="text" name="code">
-                    </div>
-
-                    <p><input class="button" type="submit" href="your-details" value="Continue"></p>
+                <p><input class="button" type="submit" href="your-details" value="Continue"></p>
+                
                 </form>
 
             </div>
