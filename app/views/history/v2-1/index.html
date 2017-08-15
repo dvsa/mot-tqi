@@ -1,11 +1,14 @@
 {% extends "layout.html" %}
 
+{% block page_title %}
+  Check the MOT history of a vehicle - GOV.UK
+{% endblock %}
+
 {% block bar_heading %}
   Check MOT history
 {% endblock %}
 
 {% block content %}
-
 
 <main id="content" role="main">
 
@@ -32,7 +35,7 @@
         Check the MOT history of a vehicle
       </h1>
 
-      <p>See the results of a vehicle’s MOT tests. Find out:</p>
+      <p>See the results of a vehicle's MOT tests. Find out:</p>
 
       <ul class="list list-bullet">
         <li>if a vehicle passed or failed its MOT</li>
@@ -45,7 +48,7 @@
       <p>You’ll see the results for a new MOT as soon as the test is done.</p>
 
       <p>
-        <a class="button button-start" href="enter-reg" role="button">Start now</a>
+        <a class="button button-start" href="/history/v2-1/enter-reg" role="button">Start now</a>
       </p>
 
     
