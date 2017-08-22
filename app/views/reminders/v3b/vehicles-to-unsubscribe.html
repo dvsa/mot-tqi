@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div id="phase_banner_beta">  
+    {% include "includes/phase_banner_beta.html" %}
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="index">Back</a>
+
+      <div>
+        
+        <h1 class="heading-xlarge">
+          Are you sure you want to unsubscribe?
+        </h1>
+
+      </div>
+
+      <form action="unsubscribed" method="get" class="form">
+
+        <div>
+
+        <legend>You will stop receiving MOT reminders at uxkainos@gmail.com for following vehicles:</legend>
+
+
+            <dl class="govuk-check-your-answers cya-questions-short">
+                <div>
+                    <dd class="cya-answer" style="font-weight: normal;">NA61 RDO, Vauxhall Astra</dd>
+                    <dd class="cya-change"><a href="#">Change</a></dd>
+                </div>    
+                <div>
+                    <dd class="cya-answer" style="font-weight: normal;">DR3 WNO, Maserati Quatroporte</dd>
+                    <dd class="cya-change"><a href="#">Change</a></dd>
+                </div> 
+            </dl>
+
+        <br>
+
+        <div style="margin-top: 30px;">
+            <p><input class="button" type="submit" value="Continue"></p>
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
