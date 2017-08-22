@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+    {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+                       
+            <h1 class="heading-large">Are you sure you want to unsubscribe?</h1>
+
+            <form method="get" action="vehicles-to-unsubscribe" class="form">
+
+                    <legend>                       
+                        <!--<p>You'll stop getting MOT reminders at uxkainos@gmail.com.</p>-->
+                        <p>Choose vehicles you don't want to recive MOT reminders anymore:</p>                            
+                    </legend>
+
+                    <fieldset>
+
+                        <div class="multiple-choice">
+                            <input type="checkbox" name="vrm_to_unsubscribe" id="NA61RDO" checked>
+                            <label for="reg1">NA61 RDO, Vauxhall Astra</label>
+                        </div>
+
+                        <div class="multiple-choice">
+                            <input type="checkbox" name="vrm_to_unsubscribe" id="DR3WNO">
+                            <label for="DR3WNO">DR3 WNO, Maserati Quatroporte</label>
+                        </div>
+
+                        <div class="multiple-choice">
+                            <input type="checkbox" name="vrm_to_unsubscribe" id="K1TCAR">
+                            <label for="K1TCAR">K1T CAR, Shelby Cobra Kit Car</label>
+                        </div>
+
+                </fieldset>
+
+            </form>
+
+
+            <!--<p>You’ll stop getting MOT reminders at uxkainos@gmail.com for VAUXHALL ASTRA, NA6I RDO.</p>-->
+
+
+ 
+            <div style="margin-top: 30px;"><p><a class="button" href="vehicles-to-unsubscribe">Continue</a></p></div>
+
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+
