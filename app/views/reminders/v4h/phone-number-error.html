@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+      {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <a class="link-back" href="index">Back</a>
+            
+            <form action="your-details-phone" method="get" class="form">
+            
+            <div class="error-summary">
+
+                <h1 class="heading-medium error-summary-heading">There was a problem</h1>
+
+                <p>You can’t subscribe. You already have 2 reminders at this phone number.</p> 
+
+                <p>You may unsubscribe from one of the reminders or use a different phone number.</p>
+
+            </div>
+
+            <h1 class="heading-xlarge">
+
+                What is your mobile number?
+
+            </h1>
+              
+            <div class="form-group form-group-error">
+
+                <label for="email">Mobile phone number</label></br>
+
+                <span class="form-hint">Your reminder will be sent here</span>
+
+                <span class="error-message">Use different phone number.</span>
+
+                 <input type="text" name="phone" class="form-control">
+
+            </div>   
+
+            <p><input class="button" type="submit" href="your-details-phone" value="Continue"></p>          
+
+            </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+
