@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+      {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <a class="link-back" href="index">Back</a>
+           
+            <form action="registration-number-error" method="get" class="form">
+
+            <div class="error-summary">
+
+                  <h1 class="heading-medium error-summary-heading">There was a problem</h1>
+
+                  <p>Enter the vehicle’s registration </p>
+
+            </div>
+
+            <h1 class="heading-large">
+                What is the vehicle’s registration number?
+            </h1>
+            
+            <div class="form-group form-group-error">
+
+                <label for="registration-number">
+
+                    <span class="form-label-bold">Registration (number plate)</span>
+
+                    <span class="error-message">Enter the vehicle’s registration</span>
+
+                </label>
+
+                <input type="text" name="VRM" class="form-control">
+
+            </div>   
+
+            <p><input class="button" type="submit" href="registration-number-error" value="Continue"></p>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+

@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Get an annual MOT reminder
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+      {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <a class="link-back" href="index">Back</a>
+           
+            <form action="registration-number-error" method="get" class="form">
+
+            <div class="notice form-group" style="margin-top: 10px;">
+                
+                <i class="icon icon-important">
+                    <span class="visually-hidden">Information</span>
+                </i>
+                
+                <strong class="bold-small">
+                    You can’t sign up right now
+                </strong>
+
+            </div>
+
+            <div>
+
+                <p>
+                    MOT has expired so you can’t sign up. Book a test at an authorized garage.
+                </p>
+
+                <p>
+                    You will be able to sign up for a reminder after the vehicle passes the MOT.
+                </p>
+
+            </div>
+
+            <h1 class="heading-large">
+                What is the vehicle’s registration number?
+            </h1>
+            
+            <div class="form-group">
+                <label for="registration-number">
+                    <span class="form-label-bold">Registration (number plate)</span>
+                </label>
+
+                <input type="text" name="VRM" class="form-control" value="{{ data['VRM'] }}" style="text-transform: uppercase;">
+
+            </div>   
+
+            <p><input class="button" type="submit" href="registration-number-error" value="Continue"></p>
+
+          </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+
