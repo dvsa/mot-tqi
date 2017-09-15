@@ -1,5 +1,9 @@
 {% extends "layout.html" %}
 
+{% block page_title %}
+  Renault Clio - Check MOT history
+{% endblock %}
+
 {% block bar_heading %}
   Check MOT history
 {% endblock %}
@@ -12,15 +16,21 @@
 
 
 <a class="link-back" href="enter-reg">Back</a>
-<div class="banner expired">
+
+<!-- <div class="banner advice">
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
 
   <h2 class="heading-medium">
-  This vehicle’s MOT has expired
+  This vehicle has a safety recall
   </h2>
 
-  <p>You can be fined up to £1000 for driving without a valid MOT</p>
-
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicin. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
+</div>
+</div> -->
 
 
 
@@ -32,65 +42,126 @@
 
 <div class="grid-row">
 
-    <div class="column-third">
+    <div class="column-two-thirds">
 
 
 
       <h1 class="heading-large" style="margin-top: 0px;">
         <span class="heading-secondary">MOT valid until</span>
-        27 May 2017
+        30 September 2018
       </h1>
+<a href="/reminders/v1/index">Get an MOT reminder by email or text</a>
 
-      <a href="/reminders/v1/index">Get a reminder email</a>
     </div>
 
     <div class="column-two-thirds">
 
-      <h1 class="heading-large" style="margin-top: 0px;">
-        <span class="heading-secondary">Registration</span>
-        CE 10 CZR
-      </h1>
 
-      <br>
 
-      <div class="grid-row">
-        <div class="column-one-third">
 
-          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.4em;">
-            <span class="heading-secondary">Fuel type</span>
-            Petrol
-          </h1>
-        </div>
-        <div class="column-one-third">
 
-          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.4em;">
-            <span class="heading-secondary">Colour</span>
-            Red
-          </h1>
-        </div>
-        <div class="column-one-third">
 
-          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.4em;">
-            <span class="heading-secondary">Date registered</span>
-            10 April 2010
-          </h1>
-        </div>
 
-      </div>
 
     </div>
   </div>
 
+  <br>
 
+    <div class="grid-row">
+      <div class="column-one-half">
+        <table>
+          <tr>
+            <td>Colour</td>
+            <td><span class="bold">Red</span></td>
+          </tr>
+          <tr>
+            <td>Fuel Type</td>
+            <td><span class="bold">Petrol</span></td>
+          </tr>
+          <tr>
+            <td>Date of registration</td>
+            <td><span class="bold">10 August 2012</span></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column-one-half">
+        <table>
+          <tr>
+            <td>Number of previous owners</td>
+            <td><span class="bold">6</span></td>
+          </tr>
+          <tr>
+            <td>Imported</td>
+            <td><span class="bold">10 June 2014</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
 <br>
+
+
+  <!-- <p><a href="https://www.themotorombudsman.org/vehicle-recalls" target="_blank">Check if there's a safety recall</a> on this vehicle that hasn't been fixed</p> -->
 <br>
-<a class="button" href="enter-reg">Check another vehicle</a>
+  <!-- <div class="grid-row">
+
+    <div class="column-two-thirds">
+      <div class="form-group">
+        <details>
+          <summary><span class="summary">Check if there is a safety recall</span></summary>
+          <div class="panel panel-border-narrow">
+            <p>
+              If you think the MOT expiry date or any of the vehicle details are wrong, <a href="">contact DVSA</a>
+
+            </p>
+<p>
+<div class="notice">
+<i class="icon icon-important">
+<span class="visually-hidden">Warning</span>
+</i>
+<strong class="bold-small">
+You can be fined up to £5,000 if you don’t register.
+</strong>
+</div>
+</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="grid-row">
+
+
+    <div class="column-two-thirds">
+      <div class="form-group">
+        <details>
+          <summary><span class="summary">Check if there's a safety recall on this vehicle</span></summary>
+          <div class="panel panel-border-narrow">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicin. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+<br> -->
+<div class="grid-row">
+  <div class="column-two-thirds">
+<div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+          <p class="heading-small">There is an outstanding safety recall on this vehicle.</p>
+          <p>The manufacturer Renault has recalled this vehicle on <span class="bold">DD Month YYYY</span>. Please contact a Renault dealership to arrange free repairs.</p>
+        </div>
+
+</div>
+</div>
 
 <br>
 <br>
 <div class="form-group">
   <details>
-    <summary><span class="summary">Incorrect details?</span></summary>
+    <summary><span class="summary">Is this information wrong?</span></summary>
     <div class="panel panel-border-narrow">
       <p>
         If you think the MOT expiry date or any of the vehicle details are wrong, <a href="">contact DVSA</a>
@@ -101,21 +172,156 @@
 </div>
 <br>
 
-
-
-
- <!-- <h1 class="heading-large" style="margin-top: 0px;">
-        <span class="heading-secondary">MOT valid until</span>
-        9 February 2018
-      </h1> -->
-
-
 <h2 class="heading-large">MOT history</h2>
 
+  <!-- test start -->
+
+
+  <div class="grid-row">
+
+    <div class="column-third">
+    <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Date tested</span>
+            10 February 2017
+          </h1>
+      <h1 class="heading-large" style="margin-top: 0px; font-size: 3.5em; color: #00823B;">PASS</h1>
+
+
+
+    </div>
+
+    <div class="column-two-thirds">
+
+
+      <div class="grid-row">
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Mileage</span>
+            29,611
+          </h1>
+        </div>
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em" style="font-size: 1.05em;">Expiry date</span>
+            9 February 2018
+          </h1>
+        </div>
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Test location</span>
+            Halfords Autocentre<br>160 Bromley Rd<br>London<br>SE6 2NZ
+          </h1>
+        </div>
+
+        <div class="column-one-half">
+
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">MOT test number</span>
+            3995 7555 7274
+          </h1>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <!-- test end -->
+
+<hr>
+
+   <!-- test start -->
+  <div class="grid-row">
+
+    <div class="column-third">
+<h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Date tested</span>
+            10 February 2017
+          </h1>
+      <h1 class="heading-large" style="margin-top: 0px; font-size: 3.5em; color: #B10E1E;">FAIL</h1>
+
+    </div>
+
+    <div class="column-two-thirds">
+
+
+      <div class="grid-row">
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Mileage</span>
+            29,611
+          </h1>
+        </div>
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">MOT test number</span>
+            5864 4990 1701
+          </h1>
+        </div>
+        <div class="column-one-half">
+
+          <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+            <span class="heading-secondary" style="font-size:1.05em">Test location</span>
+            Halfords Autocentre<br>160 Bromley Rd<br>London<br>SE6 2NZ
+          </h1>
+        </div>
+
+
+
+      </div>
+
+      <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+        <span class="heading-secondary" style="font-size:1.05em">Reasons for failure:</span>
+
+
+        <ul class="list list-bullet">
+          <li>Nearside Track rod end ball joint has excessive play (2.2.B.1f)</li>
+          <li>Nearside Rear Tyre has a cut in excess of the requirements deep enough to reach the ply or cords (4.1.D.1a)</li>
+        </ul>
+      </h1>
+
+      <h1 class="heading-large" style="margin-top: 0px; font-size: 1.05em; font-weight: bold;">
+        <span class="heading-secondary" style="font-size:1.05em">Advisory notice:</span>
+
+
+        <ul class="list list-bullet">
+          <li>Offside Track rod end ball joint has slight play (2.2.B.1f)</li>
+        </ul>
+      </h1>
+
+<div class="form-group">
+  <details>
+    <summary><span class="summary">What are these?</span></summary>
+    <div class="panel panel-border-narrow">
+      <p>Failure items must be fixed before the vehicle can pass its MOT.</p>
+<p>
+        Advisory notices are minor problems with the vehicle. If they become more serious they could cause the vehicle to fail its next MOT test.</p>
 
 
 
 
+
+      </p>
+    </div>
+  </details>
+</div>
+    </div>
+
+
+  </div>
+
+  <!-- test end -->
+
+  <hr>
 
   <!-- test start -->
   <div class="grid-row">
