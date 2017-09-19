@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check the MOT history of a vehicle - GOV.UK
+{% endblock %}
+
+{% block bar_heading %}
+  Check MOT history
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li class="">
+        <a href="/">Home</a>
+    </li>
+
+    <li class="">
+        <a href="/browse/driving">Driving and transport</a>
+    </li>
+
+    <li class="">
+        <a href="/browse/driving/vehicle-tax-mot-insurance">Vehicle tax, MOT and insurance</a>
+    </li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Check the MOT history of a vehicle
+      </h1>
+
+      <p>See the results of a vehicle's MOT tests. Find out:</p>
+
+      <ul class="list list-bullet">
+        <li>if a vehicle passed or failed its MOT</li>
+        <li>where its MOT tests were done</li>
+        <li>when its next MOT is due</li>
+        <li>mileages recorded at the time of testing</li>
+        <li>advisory and failure items from each test</li>
+      </ul>
+
+      <p>You’ll see the results for a new MOT as soon as the test is done.</p>
+
+      <p>
+        <a class="button button-start" href="/history/v3/enter-reg" role="button">Start now</a>
+      </p>
+
+    
+
+     
+      
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>You’ll need the vehicle’s registration number (number plate).</p>
+      <p>You can only get test results from 2005 onwards, for tests done in England, Scotland or Wales.</p>
+
+      <p style="font-size: 16px; color: #6f777b;">Last updated: 16 June 2017</p>
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Vehicle tax, MOT and insurance</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+          <li><a href="">Getting an MOT</a></li>
+          <li><a href="">Check if a vehicle is taxed</a></li>
+            <li><a href="">Check the MOT status of a vehicle</a></li>
+            <li><a href="">Check for vehicle, part or accessory recalls</a></li>
+            <li><a href="">Check you’re not buying a stolen vehicle</a></li>
+            <li><a href="">Replace a lost or damaged MOT certificate</a></li>
+            <li class="related-items-more">
+              <a href="/browse/driving/vehicle-tax-mot-insurance" class="bold-xsmall">
+                More
+</a>            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+
