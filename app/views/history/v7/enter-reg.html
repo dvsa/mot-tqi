@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  What is the vehicle’s registration number? - Check MOT history
+{% endblock %}
+
+{% block bar_heading %}
+Check MOT history
+{% endblock %}
+
+{% block content %}
+
+
+
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+
+
+      <form action="scenario-1" method="post" class="form">
+        <a class="link-back" href="index">Back</a>
+        <h1 class="form-title heading-large">
+          What is the vehicle's registration number?
+        </h1>
+
+
+        <!-- Full name -->
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">Registration number (number plate)</label>
+          <span class="form-hint">For example, CU57ABC</span>
+          <input type="text" class="form-control" id="full-name" style="text-transform: uppercase;">
+        </div>
+
+
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+
+      </form>
+
+
+
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
