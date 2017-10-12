@@ -64,7 +64,9 @@ typings/
 .DS_Store
 .start.pid
 .port.tmp
-public
+public/images
+public/javascripts
+public/stylesheets
 lib/govuk_template.html
 govuk_modules
 node_modules/*
