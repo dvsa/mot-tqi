@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  2FA Alternative
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+          <h1 class="heading-xlarge">
+              <span class="heading-secondary">Prototype</span>
+              2FA Alternative 
+          </h1>
+               Service Designer: <a href="mailto:michael.campbell@dvsa.gov.uk">Michael Campbell</a><br>
+               UX Designer: <a href="mailto:r.drewnowski@kainos.com">Rafal Drewnowski</a>
+          
+         <hr>
+
+              <p>
+                  <span class="heading-small">Lost/ Broken Journey</span> - work in progress
+              </p>
+          
+          <ul class="list list-bullet">
+              <li>
+                  <a href="lost/sign-in.html">Version 1</a>
+              </li>  
+          </ul>
+          
+          <hr>
+
+              <p>
+                  <span class="heading-small">Card Ordered Journey</span> - work in progress
+              </p>
+          
+          <ul class="list list-bullet">
+              <li>
+                  <a href="Ordered/index.html">Version 1</a>
+              </li>  
+          </ul>
+            
+            <hr>
+            
+            <p>
+              <span class="heading-small">Temporary Log in Journey</span> - work in progress
+            </p>
+          
+          <ul class="list list-bullet">
+              <li>
+                  <a href="Temp/index.html">End of grace period</a>
+              </li>  
+              <li>
+                  <a href="Temp/happy-path/index.html">Normal login</a>
+              </li>
+          </ul>
+          
+          <hr>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,221 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+	<nav id="proposition-menu">
+	  <a href="/" id="proposition-name">Bob Thomas Arctor (Tester)</a>
+	  <ul id="proposition-links">
+	    <li><a href="#">Home</a></li>
+	    <li><a href="#">Your profile</a></li>
+	    <li><a href="../Ordered/index">Sign out</a></li>
+	  </ul>
+	</nav>
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+.inline-element {
+    clear: right;
+    padding-right: 45px;
+}
+.inline-element:last-child {
+    padding-right: initial;
+}
+.key-value-list__header {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 1.1111111111;
+	font-weight: 700;
+	text-transform: none;
+	margin-top: 1.04167em
+}
+
+@media (max-width: 640px) {
+.key-value-list__header {
+	font-size: 24px;
+	line-height: 1.0416666667;
+}
+}
+
+@media (min-width: 641px) {
+.key-value-list__header {
+	margin-top: 1.25em;
+}
+}
+.key-value-list {
+	margin-top: 30px
+}
+.key-value-list__key, .key-value-list__value, .key-value-list__value--numeric, .key-value-list__value--muted {
+	width: 50%
+}
+.key-value-list__value {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.3157894737;
+	font-weight: 700;
+	text-transform: none;
+	padding-left: 15px
+}
+
+@media (max-width: 640px) {
+.key-value-list__value {
+	font-size: 16px;
+	line-height: 1.25;
+}
+}
+.key-value-list__item-action {
+	padding-left: 15px
+}
+.key-value-list__value--numeric {
+	font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.3157894737;
+	font-weight: 700;
+	text-transform: none;
+	padding-left: 15px;
+	letter-spacing: 0.03em
+}
+
+@media (max-width: 640px) {
+.key-value-list__value--numeric {
+	font-size: 16px;
+	line-height: 1.25;
+}
+}
+.key-value-list__value--muted {
+	color: #6f777b;
+	padding-left: 15px
+}
+.key-value-list__meta {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: 400;
+	text-transform: none;
+	color: #6f777b;
+	display: block
+}
+
+@media (max-width: 640px) {
+.key-value-list__meta {
+	font-size: 14px;
+	line-height: 1.1428571429;
+}
+}
+.result-table__meta {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: 400;
+	text-transform: none;
+	color: #6f777b;
+	display: block
+}
+.table-caption {
+	text-align: left;
+}
+.content-navigation {
+    margin-top: 30px;
+}
+.object-svg {
+	display: block;
+	margin-bottom: 30px;
+}
+.data-wrapper {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.data-item.bold-large {
+	padding-bottom: 8px;
+}
+.line-break {
+	display: block;
+}
+.text-center {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 90px;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.download-block {
+	margin-bottom: 60px;
+}
+.column-one-quarter.column-one-fifth {
+	width: 20%;
+}
+</style>
+
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+    
+    <div class="breadcrumbs">
+	  <ol>
+	    <li><a href="/">Home</a></li>
+          <li><a href="#">Your profile</a></li>
+        <li>Activate your security card</li>
+	  </ol>
+	</div>
+  
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">
+            <span class="heading-secondary">Your profile</span>
+          Activate your security card
+        </h1>
+            
+        <p class="lede">Activate your new card using its serial number and new PIN.This will take 2 minutes.</p>
+        <div class="form-group">
+            <details>
+                  <summary><span class="summary">Where to find the serial number and PIN</span></summary>
+                  <div class="panel panel-border-narrow">
+                    <p>
+                      The serial number is on the back of the card, in the upper right-hand corner.
+                    </p>
+                    <p>
+                      Generate a new 6-digit PIN by pressing on the button on the front of the card. You can generate a new PIN every 30 seconds.
+                    </p>
+                  </div>
+            </details>
+        </div>
+            <br>
+            <form action="success-card-activated">
+            <div class="form-group">
+                    <label class="form-label" for="serial-number">
+                      Serial number
+                          <span class="form-hint">
+                            For example: 1234567898765432
+                          </span>
+                    </label>
+                    <input class="form-control" id="serial-number" type="text" name="serial-number">
+            </div>
+            
+            <div class="form-group">
+                    <label class="form-label" for="serial-number">
+                      Security card PIN
+                          <span class="form-hint">
+                            For example: 123456
+                          </span>
+                    </label>
+                    <input class="form-control form-control-1-4" id="serial-number" type="text" name="serial-number">
+            </div>
+            <nav class="content-navigation">
+            <input class="button" type="submit" value="Activate your security card"><br><br>
+            </nav>
+            <a href="#">Back to profile</a>
+        </form>
+        
+    </div>
+  </div>
+</main>
+
+{% endblock %}
