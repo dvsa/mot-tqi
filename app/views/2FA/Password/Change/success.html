@@ -10,7 +10,7 @@
 	  <ul id="proposition-links">
 	    <li><a href="#">Home</a></li>
 	    <li><a href="#">Your profile</a></li>
-	    <li><a href="../lost/sign-in">Sign out</a></li>
+	    <li><a href="#">Sign out</a></li>
 	  </ul>
 	</nav>
 {% endblock %}
@@ -150,7 +150,6 @@
 }
 </style>
 
-
 <main id="content" role="main">
 
     <div id="phase_banner_beta">  
@@ -161,7 +160,7 @@
 	  <ol>
 	    <li><a href="/">Home</a></li>
           <li><a href="#">Your profile</a></li>
-        <li>Order a security card</li>
+        <li>Change your password</li>
 	  </ol>
 	</div>
   
@@ -170,21 +169,16 @@
             
       <div class="govuk-box-highlight">
         <h1 class="heading-xlarge">
-          Your security card has been activated
+          Password changed
         </h1>
-        <p class="font-large">You'll need your card each time you sign in </p>  
+        <p class="font-large">Keep you sign in details private</p>  
       </div>
-        <form action="order-card-start" method="post" class="form">
+        <form action="../../index" method="post" class="form">
           <h2 class="heading-medium">What happens next</h2>
-                <p>Next time you sign in to MOT testing service, you will be asked for:</p>
-                    
-                    <ul class="list-bullet">
-                        <li>Your user ID</li>
-                        <li>Your password</li>
-                        <li>the PIN form your secuirty card</li>
-                    </ul>
+                <p>You can now sign in with your user ID and new password.</p>
+
             <br>
-            <input class="button" value="Continue to home page">
+            <input class="button" type="submit" value="Continue to home page">
         </form>
             </div>    
             
