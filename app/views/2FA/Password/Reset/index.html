@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  2FA Alternative
+{% endblock %}
+
+{% block content %}
+
+<main id="content">
+    
+        <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+        </div>
+            
+        <h1 class="heading-xlarge">
+            <span class="heading-secondary">MOT testing service</span>
+          Password reset
+        </h1>
+            
+
+
+            <p class="lede">You have arrived here after entering/following a link to reset your password</p>
+                    
+                    <div class="panel panel-border-narrow">
+                        <p>Note that successfully resetting your password here will cause this application to <strong class="bold">automatically sign in</strong> to your account.</p>
+                    </div>
+                
+            <form action="#">
+
+
+                <label for="password">Your new password must have:
+                    <div>
+                        <ul class="list list-bullet">
+                            <li>8, or more, characters</li>
+                            <li>1, or more, numbers</li>
+                            <li>upper and lower case letters</li>
+                        </ul>
+                        <span>and, must not</span>
+                        
+                        <ul class="list list-bullet">
+                            <li class="criteria__criterion" data-criteria="notMatch" data-criteria-param="demotestuser">match your username</li>
+                            <input type="hidden" id="username" name="username" value="demotestuser">
+                        </ul>
+                    </div>
+                </label>
+
+                    <fieldset>
+                        <legend class="form-title heading-large" id=""></legend>
+                                
+            
+            <div class="form-group ">
+                                    <label for="password" class="form-label">
+                New password
+            </label>
+                <input type="password" name="password" id="password" class="
+                form-control
+                
+            " value="">
+                                                                    </div>
+            
+        
+        
+            
+            
+            <div class="form-group ">
+                                    <label for="confirm_password" class="form-label">
+                Confirm new password
+            </label>
+                <input type="password" name="confirm_password" id="confirm_password" class="
+                form-control
+                
+            " value="">
+                                                                    </div>
+            
+        
+        
+        </fieldset>
+
+                    <nav class="content-navigation">
+
+                                <a href="&#10;                                            #&#10;                                " class="button">Reset password</a>
+                            
+                
+                                
+                        <ul class="content-navigation__secondary">
+                        </ul>
+
+                    </nav>
+            </form>
+        </main>
+{% endblock %}
