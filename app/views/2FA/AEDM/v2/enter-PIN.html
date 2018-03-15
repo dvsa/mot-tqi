@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block service_name %}
+  <nav id="proposition-menu">
+    <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+    <ul id="proposition-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Your profile</a></li>
+      <li><a href="../AEDM/sign-in">Sign out</a></li>
+    </ul>
+  </nav>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">
+            <span class="heading-secondary">Confirm your identity</span>
+          Your security card PIN
+        </h1>
+
+        <p class="lede">You are using the card with serial number <strong class="bold"> ZZZZ000000169431</strong>. Press the button on the security card to display the PIN.</p>
+
+     <form action="notification" method="post" class="form">
+
+        <fieldset>
+            <div class="form-group">
+            <details>
+
+                  <summary><span class="summary">Where to find the security card PIN</span></summary>
+
+                  <div class="panel panel-border-narrow">
+
+                    <p>
+                       <strong class="bold-small">PIN:</strong> generate a new PIN by pressing the button on the front of the card.
+                    </p>
+
+                  </div>
+
+                </details>
+                </div>
+            <!-- Full name -->
+            <div class="form-group">
+              <label class="form-label" for="card-pin">Security card PIN</label>
+              <input type="text" class="form-control form-control-1-4" id="card-pin">
+            </div>
+
+
+            <ul class="list">
+                <li><a href="#">Temporary log in</a></li>
+                <li><a href="#">Lost or broken security card</a></li>
+            </ul>
+
+
+            <div class="form-group">
+              <input type="submit" class="button" href="notification" value="Confirm">
+            </div>
+
+            <a href="">Cancel and return to home page</a>
+
+         </fieldset>
+
+
+    </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
