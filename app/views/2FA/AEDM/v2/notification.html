@@ -1,0 +1,265 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  2FA - GOV.UK prototype
+{% endblock %}
+
+{% block service_name %}
+  <nav id="proposition-menu">
+    <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+    <ul id="proposition-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Your profile</a></li>
+      <li><a href="../AEDM/sign-in">Sign out</a></li>
+    </ul>
+  </nav>
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+.inline-element {
+    clear: right;
+    padding-right: 45px;
+}
+.inline-element:last-child {
+    padding-right: initial;
+}
+.key-value-list__header {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.1111111111;
+  font-weight: 700;
+  text-transform: none;
+  margin-top: 1.04167em
+}
+
+@media (max-width: 640px) {
+.key-value-list__header {
+  font-size: 24px;
+  line-height: 1.0416666667;
+}
+}
+
+@media (min-width: 641px) {
+.key-value-list__header {
+  margin-top: 1.25em;
+}
+}
+.key-value-list {
+  margin-top: 30px
+}
+.key-value-list__key, .key-value-list__value, .key-value-list__value--numeric, .key-value-list__value--muted {
+  width: 50%
+}
+.key-value-list__value {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.3157894737;
+  font-weight: 700;
+  text-transform: none;
+  padding-left: 15px
+}
+
+@media (max-width: 640px) {
+.key-value-list__value {
+  font-size: 16px;
+  line-height: 1.25;
+}
+}
+.key-value-list__item-action {
+  padding-left: 15px
+}
+.key-value-list__value--numeric {
+  font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.3157894737;
+  font-weight: 700;
+  text-transform: none;
+  padding-left: 15px;
+  letter-spacing: 0.03em
+}
+
+@media (max-width: 640px) {
+.key-value-list__value--numeric {
+  font-size: 16px;
+  line-height: 1.25;
+}
+}
+.key-value-list__value--muted {
+  color: #6f777b;
+  padding-left: 15px
+}
+.key-value-list__meta {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  color: #6f777b;
+  display: block
+}
+
+@media (max-width: 640px) {
+.key-value-list__meta {
+  font-size: 14px;
+  line-height: 1.1428571429;
+}
+}
+.result-table__meta {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  color: #6f777b;
+  display: block
+}
+.table-caption {
+  text-align: left;
+}
+.content-navigation {
+    margin-top: 30px;
+}
+.object-svg {
+  display: block;
+  margin-bottom: 30px;
+}
+.data-wrapper {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.data-item.bold-large {
+  padding-bottom: 8px;
+}
+.line-break {
+  display: block;
+}
+.text-center {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.download-block {
+  margin-bottom: 60px;
+}
+.column-one-quarter.column-one-fifth {
+  width: 20%;
+}
+</style>
+
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Home</a></li>
+          <li><a href="#">Notifications</a></li>
+        <li>Notification</li>
+    </ol>
+  </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+              <h1 class="heading-xlarge">
+                  <span class="heading-secondary">User locked out</span>
+                Temporary login for user GRIB1234 expired
+              </h1>
+
+              <p>They've been logging in without security card for 5 days — a maximum of grace period. Now they can't log in.</p>
+
+              <p>You can extend the grace period — they will be able to log in without a security card for 5 more days.</p>
+
+              <h3 class="heading-medium">Locked out user information</h3>
+
+              <table id="personal_details">
+                  <tbody>
+                      <tr>
+                          <th>Name</th>
+                          <td id="display-name">Mr Bertie Lorenzo Gribben</td>
+                      </tr>
+                      <tr>
+                          <th>User ID</th>
+                          <td id="display-username">GRIB1234</td>
+                      </tr>
+                      <tr>
+                          <th>Date of birth</th>
+                          <td id="date-of-birth">2 October 1975</td>
+                      </tr>
+
+                      <tr>
+                          <th>Driving licence</th>
+                          <td id="drivingLicence">DUNAY504037VJ9KA<br><span>GB licence</span></td>
+                      </tr>
+
+                  </tbody>
+              </table>
+
+              <h3 class="heading-medium">Contact details</h3>
+              <table id="contact_details">
+                  <tbody>
+                      <tr>
+                          <th>Email</th>
+                          <td id="email-address">
+                              b.gribben@example.com
+                              <a href="#">Change<span class="visuallyhidden"> Email</span></a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th>Address</th>
+                          <td id="full-address">
+                              98, Tip Way <br>Sudbury <br>Suffolk <br>Suffolk <br>SW13 6ZU<br><a href="#">Change</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th>Telephone</th>
+                          <td id="telephone-number">
+                              04509100000 <a href="#" title="Change Telephone">Change<span class="visuallyhidden"> Telephone</span></a>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+
+
+              <h3 class="heading-medium">Security card</h3>
+
+              <table id="security-card">
+                  <tbody>
+                      <tr>
+                          <th>
+                              Activation date
+                          </th>
+                          <td id="activation_date">
+                              3 December 2016</td>
+                      </tr>
+                      <tr>
+                          <th>
+                              Serial number
+                          </th>
+                          <td id="serial_number">
+                              4610900000046109</td>
+                      </tr>
+                  </tbody>
+              </table>
+
+              <p style="margin-top: 30px;">You will need your security card to confirm your identity on the next screen.</p>
+
+              <div style="margin-top: 10px;"><p><a class="button" href="extend-grace-period-success">Extend the grace period</a></p></div>
+
+              <a href="notifications">Back to notifications</a>
+        </div>
+
+
+
+
+    </div>
+</main>
+
+{% endblock %}

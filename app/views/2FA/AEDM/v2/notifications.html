@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  2FA - GOV.UK prototype
+{% endblock %}
+
+{% block service_name %}
+  <nav id="proposition-menu">
+    <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+    <ul id="proposition-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Your profile</a></li>
+      <li><a href="../AEDM/sign-in">Sign out</a></li>
+    </ul>
+  </nav>
+{% endblock %}
+
+{% block content %}
+
+<!-- <script type="text/javascript "src="https://github.com/alphagov/static/blob/master/app/assets/javascripts/jquery.tabs.js" /> -->
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Home</a></li><li>Notifications</li>
+    </ol>
+  </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+                <h1 class="heading-xlarge">
+                    Notifications
+                </h1>
+
+                <div class="js-tabs nav-tabs">
+                    <ul>
+                        <li class="active"><a href="#inbox">Inbox (1)</a></li>
+                        <li><a href="#archive">Archive</a></li>
+                    </ul>
+                </div>
+
+                <div class="js-tab-content tab-content">
+                    <div class="js-tab-pane tab-pane" id="inbox">
+                        <table>
+                            <tbody>
+                            <tr>
+                              <th>Title</th>
+                              <th>Date received</th>
+                            </tr>
+                            <tr>
+                              <td><a href="enter-PIN">User GRIB1234 is locked out. Temporary login expired.</a></td>
+                              <td>13 Mar 2018</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="js-tab-pane tab-pane" id="archive">
+                    </div>
+
+                </div>
+
+
+            <p style="margin-top: 40px;">
+                <a href="notifications">Back to start page</a>
+            </p>
+        </div>
+
+
+
+
+    </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,187 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  2FA - GOV.UK prototype
+{% endblock %}
+
+{% block service_name %}
+    <nav id="proposition-menu">
+      <a href="#" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+      <ul id="proposition-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Your profile</a></li>
+        <li><a href="#">Sign out</a></li>
+      </ul>
+    </nav>
+{% endblock %}
+
+
+{% block content %}
+
+<link href="https://ci.test.mot-testing.service.gov.uk/assets/stylesheets/dvsa.css" media="screen" rel="stylesheet" />
+
+<style type="text/css">
+.c-mailbox-status a {
+    text-decoration: none;
+}
+</style>
+
+<div class="phase-banner" style="margin: 0 auto; width: 960px;">
+    <p>
+        <strong class="phase-tag">BETA</strong>
+        <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+</div>
+
+
+<main id="content">
+
+    <div class="container">
+
+        
+        <!-- Breadcrumbs -->
+                <!-- END -->
+
+        
+                    <div class="organisation-logo organisation-logo--md">Driver &amp; Vehicle Standards Agency</div>
+                <!-- Titles -->
+                    <header class="content-header">
+    <h1>
+        <span class="content-header__type"></span>
+        <span class="content-header__title">MOT testing service</span>
+            </h1>
+    </header>                <!-- END -->
+
+                    <div class="row contents">
+                <div class="col-lg-12">
+                    <!-- lede   -->
+                                        <!-- end    -->
+
+                    <div class="grid-row">
+    <div class="__sign-in">
+                                <div class="column-half">
+        <form id="Login" name="Login" action="/login" method="post" autocomplete="new-password">
+            <fieldset>
+                <legend class="form-title heading-large">Sign in</legend>
+                <input type="text" id="IDToken1" name="IDToken1" value="" class="form-control
+                form-control-1-2" tabindex="-1" style="width: 1px; position: absolute; left: -9999px;">
+                <input type="password" id="IDToken2" name="IDToken2" autocomplete="off" value="" class="form-control
+                form-control-1-2" tabindex="-1" style="width: 1px; position: absolute; left: -9999px;">
+                
+    <div class="form-group form-group">
+
+        <label for="_tid10d039122" class="form-label ">
+
+            User ID
+            
+                    </label>
+
+        
+        
+<input type="text" id="_tid10d039122" name="_tid10d039122" value="" class="form-control
+        form-control-1-2">
+
+            </div>
+
+
+    <div class="form-group form-group">
+
+        <label for="_tid20d039122" class="form-label ">
+
+            Password
+            
+                    </label>
+
+        
+        
+<input type="password" id="_tid20d039122" name="_tid20d039122" autocomplete="off" value="" class="form-control
+        form-control-1-2">
+
+            </div>
+
+                <input type="hidden" name="_csrf_token" value="A504D619-3279-7377-F91C-7622F9D778CE">
+                <input type="hidden" id="goto" name="goto" value="aHR0cHM6Ly9jaS50ZXN0Lm1vdC10ZXN0aW5nLnNlcnZpY2UuZ292LnVrOjQ0My8=">
+            </fieldset>
+            <a id="forgotten-or-change-password" href="#">Forgotten your password?</a>
+            <nav class="content-navigation">
+                <a href="index.html">
+    <input type="button" id="submitSiteSearch" name="" value="Sign in" class="button"></a>
+            </nav>
+            <input name="IDButton" type="hidden" style="display: none;">
+        </form>
+    </div>
+    </div>
+    <div class="column-half">
+        <h3 class="heading-medium">Sign in help</h3>
+                    <details role="group">
+                <summary role="button" aria-controls="details-content-3" aria-expanded="true" tabindex="0">
+                    <span class="summary">Lost, forgotten or damaged security card</span>
+                </summary>
+                <div class="panel panel-indent" id="details-content-3" aria-hidden="false" style="display: block;">
+                    <p>Sign in with your user ID and password. You’ll then see an option to sign in without your card and order a new one if you need to.</p>
+                </div>
+            </details>
+                <details role="group">
+            <summary role="button" aria-controls="details-content-0" aria-expanded="true" tabindex="0">
+                <span class="summary" id="do-not-have-account-section">Don't have an account</span>
+            </summary>
+            <div class="panel panel-indent" id="details-content-0" aria-hidden="false" style="display: block;">
+                <p><a id="create-an-account" href="/account/register">Create a new account</a> for the MOT testing service. Only do this if you don’t already have one.</p>
+            </div>
+        </details>
+    </div>
+</div>
+                </div>
+            </div>
+        
+        
+    </div>
+    <!-- /container -->
+</main>
+
+<footer class="group js-footer" id="footer">
+    <div class="footer-wrapper">
+
+        <div class="footer-categories">
+            <div class="footer-resources--two-thirds">
+                <h2 class="footer-resources__header">Resources on GOV.UK</h2>
+                <ul>
+                    <li>
+                        <a id="resources_0" href="https://www.gov.uk/government/publications/motorcycle-mot-inspection-checklist-vt-29m">
+                            Motorcycle inspection checklist for class 1 and 2 (VT29M)</a>
+                            </li>
+                    <li>
+                        <a id="resources_1" href="https://www.gov.uk/government/publications/mot-inspection-checklist-vt-29">
+                            Vehicle inspection checklist for class 3, 4, 5 and 7 (VT29)</a>
+                            </li>
+                    <li>
+                        <a id="resources_2" href="https://www.gov.uk/government/publications/in-service-exhaust-emission-standards-for-road-vehicles">
+                            In service exhaust emission standards for road vehicles</a>
+                            </li>
+                    <li>
+                        <a id="resources_3" href="https://www.gov.uk/topic/mot/manuals#special-notices">
+                            Special notices</a>
+                            </li>
+            </ul>
+            </div>
+            <div class="footer-resources--one-third">
+                <h2 class="footer-resources__header">MOT manuals and guide</h2>
+                <ul>
+                    <li>
+                        <a id="manuals_0" href="#" target="_blank">
+                                Manual for class 1 and 2 vehicles</a>
+                        </li>
+                            <li>
+                            <a id="manuals_1" href="#" target="_blank">
+                                Manual for class 3, 4, 5, and 7 vehicles</a>
+                        </li>
+                            <li>
+                            <a id="manuals_2" href="https://www.gov.uk/government/publications/mot-testing-guide" target="_blank">
+                                MOT testing guide </a>
+                        </li>
+                    </ul>
+            </div>
+            <hr>
+        </div>
+
+{% endblock %}
