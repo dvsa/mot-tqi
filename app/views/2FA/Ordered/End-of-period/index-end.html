@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  MOT testing service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+  
+
+     
+        <!--<a class="link-back" href="index">Back</a> -->
+         
+         <div class="DVSA logo">
+            <a href="https://www.onlinedisclosures.co.uk/wp-content/uploads/dvsa-logo.png"></a>
+         </div>
+         
+         <img src="/app/assets/images/dvsa-logo.png" alt="DVSA logo">
+        <h1 class="form-title heading-xlarge">
+          MOT testing service
+        </h1>
+        <div class="grid-row">
+        <div class="column-half">
+            <form action="end-enter-pin" method="post" class="form">
+                <fieldset>
+                 <legend class="form-title heading-large">Sign in</legend>
+
+                    <!-- Full name -->
+                    <div class="form-group">
+                      <label class="form-label" for="User-id">User ID</label>
+                      <input type="text" class="form-control" id="User-id">
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="Password">Password</label>
+                      <input type="password" class="form-control" id="Password">
+                    </div>
+                    
+                    <a href="#">Forgotten your password?</a>
+
+                    <div class="form-group" style="margin-top: 20px;">
+                      <input type="submit" class="button" href="end-enter-pin" value="Sign in">
+                    </div>
+
+                 </fieldset>
+         
+
+            </form>
+
+        </div>
+      
+            <div class="column-half">
+                <h3 class="heading-medium">Sign in help</h3>
+                <div class="form-group">    
+                    <details>
+
+                          <summary><span class="summary">Lost, forgotten or damaged security card</span></summary>
+                          <div class="panel panel-border-narrow">
+                            <p>
+                                Sign in with your user ID and password. You’ll then see an option to sign in without your card and order a new one if you need to.
+                            </p>
+                              <p></p>
+
+                          </div>
+
+                    </details>
+                    <details>
+
+                          <summary><span class="summary">Don't have an account</span></summary>
+                          <div class="panel panel-border-narrow">
+                            <p>
+                                <a href="#">Create a new account</a> for the MOT testing service. Only do this if you don’t already have one.
+                            </p>
+
+                          </div>
+
+                    </details>
+                </div>
+            </div>
+  </div>
+</main>
+
+{% endblock %}

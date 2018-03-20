@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  MOT testing service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+    
+  
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            
+        <div class="govuk-box-highlight" style="background: #b10e1e;">
+        <h1 class="heading-xlarge" style="margin-bottom: 0.4em; margin-top: 0.2em">
+          You need to activate your security card
+        </h1>
+        <p class="font-large" style="margin-bottom: 0.2em">You can only continue by using a security card.</p>  
+      </div>
+            
+        <p class="lede">You need use a security card to continue using the MOT testing service.</p>
+         
+        <div style="margin-top: 30px;"><p><a class="button" href="end-activate-card-start.html">Activate your security card</a></p></div>
+            <h2 class="heading-medium">Need more time?</h2>
+            <p>If your security card has not arrived yet, you can request an extension by contacting the helpdesk.</p>
+            
+        <div class="form-group">    
+                <details>
+
+                  <summary><span class="summary">Contact the helpdesk</span></summary>
+
+                  <div class="panel panel-border-narrow">
+
+                    <p>Call the DVSA helpdesk on <strong class="bold-small">0330 123 5654</strong> to reset your questions.</p>
+                    <p>Opening hours are:</p>
+                    <ul>
+                        <li>Monday to friday, 8am to 8pm</li>
+                        <li>Saturday, 8am to 2pm</li>
+                        <li>Sunday, closed</li>
+                    </ul>
+
+                  </div>
+
+                </details>
+            </div>
+            
+         <a href="end-enter-pin">Cancel and return to sign in</a>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,243 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+	<nav id="proposition-menu">
+	  <a href="/" id="proposition-name">Bob Thomas Arctor (Tester)</a>
+	  <ul id="proposition-links">
+	    <li><a href="#">Home</a></li>
+	    <li><a href="#">Your profile</a></li>
+	    <li><a href="#">Sign out</a></li>
+	  </ul>
+	</nav>
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+.inline-element {
+    clear: right;
+    padding-right: 45px;
+}
+.inline-element:last-child {
+    padding-right: initial;
+}
+.key-value-list__header {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 1.1111111111;
+	font-weight: 700;
+	text-transform: none;
+	margin-top: 1.04167em
+}
+
+@media (max-width: 640px) {
+.key-value-list__header {
+	font-size: 24px;
+	line-height: 1.0416666667;
+}
+}
+
+@media (min-width: 641px) {
+.key-value-list__header {
+	margin-top: 1.25em;
+}
+}
+.key-value-list {
+	margin-top: 30px
+}
+.key-value-list__key, .key-value-list__value, .key-value-list__value--numeric, .key-value-list__value--muted {
+	width: 50%
+}
+.key-value-list__value {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.3157894737;
+	font-weight: 700;
+	text-transform: none;
+	padding-left: 15px
+}
+
+@media (max-width: 640px) {
+.key-value-list__value {
+	font-size: 16px;
+	line-height: 1.25;
+}
+}
+.key-value-list__item-action {
+	padding-left: 15px
+}
+.key-value-list__value--numeric {
+	font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.3157894737;
+	font-weight: 700;
+	text-transform: none;
+	padding-left: 15px;
+	letter-spacing: 0.03em
+}
+
+@media (max-width: 640px) {
+.key-value-list__value--numeric {
+	font-size: 16px;
+	line-height: 1.25;
+}
+}
+.key-value-list__value--muted {
+	color: #6f777b;
+	padding-left: 15px
+}
+.key-value-list__meta {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: 400;
+	text-transform: none;
+	color: #6f777b;
+	display: block
+}
+
+@media (max-width: 640px) {
+.key-value-list__meta {
+	font-size: 14px;
+	line-height: 1.1428571429;
+}
+}
+.result-table__meta {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: 400;
+	text-transform: none;
+	color: #6f777b;
+	display: block
+}
+.table-caption {
+	text-align: left;
+}
+.content-navigation {
+    margin-top: 30px;
+}
+.object-svg {
+	display: block;
+	margin-bottom: 30px;
+}
+.data-wrapper {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.data-item.bold-large {
+	padding-bottom: 8px;
+}
+.line-break {
+	display: block;
+}
+.text-center {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 90px;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.download-block {
+	margin-bottom: 60px;
+}
+.column-one-quarter.column-one-fifth {
+	width: 20%;
+}
+</style>
+
+<main id="content">
+            <div class="phase-banner">
+                <p>
+                    <strong class="phase-tag">BETA</strong>
+                    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+                </p>
+            </div>
+            
+                <div class="breadcrumbs">
+                  <ol>
+                    <li><a href="#">Home</a></li>
+                      <li><a href="#">Your profile</a></li>
+                    <li>Change your password</li>
+                  </ol>
+                </div>
+            
+            <h1 class="heading-xlarge">
+                <span class="heading-secondary">Your profile</span>
+              Change your password
+            </h1>
+            
+            <form>
+            <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+
+                <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+                    There was a problem with the information you entered:
+                </h2>
+
+                <ul class="error-summary-list">
+                    <li><a href="#oldPassword">Current password - enter your current password</a></li>
+                    <li><a href="#password">New password - enter a password</a></li>
+                    <li><a href="#confirm_password">Re-type your new password - re-type your password</a></li>
+                </ul>
+
+            </div>
+                <fieldset>
+                    <legend class="heading-large">Current password</legend>
+                    
+                    <div class="form-group form-group-error">
+
+                        <label for="oldPassword" class="form-label ">Current password
+                            <span class="error-message">Enter your current password</span>
+                        </label>        
+                        <input type="password" id="oldPassword" name="oldPassword" autocomplete="off" value="" class="form-control">
+                    </div>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend class="heading-large">New password</legend>
+                    <div>
+                        <span>
+                            Your new password must have:
+                        </span>
+                        <ul class="list list-bullet">
+                            <li>8 or more characters</li>
+                            <li>1 or more numbers</li>
+                            <li>upper and lower case letters</li>
+                        </ul>
+            
+
+                            <p>It can't be a password you have used before.</p>
+  
+                    </div>
+                </fieldset>
+
+                    <fieldset>
+                        <legend class="form-title heading-large" id=""></legend>
+                        <div class="form-group form-group-error">
+                            <label for="password" class="form-label">New password
+                                <span class="error-message">Enter new password</span>
+                            </label>
+                            <input type="password" name="password" id="password" class="form-control" value="">
+                        </div>
+ 
+                        <div class="form-group form-group-error">
+                            <label for="confirm_password" class="form-label">Confirm new password
+                                <span class="error-message">Re-type your password</span>
+                            </label>
+                            <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="">
+                        </div>
+                    </fieldset>
+
+                    <nav class="content-navigation">
+
+                        <a href="success.html" class="button">Change password</a>
+                    </nav>
+                    <br>
+                    <a href="#">Cancel and return to your profile</a>
+            </form>
+        </main>
+{% endblock %}
