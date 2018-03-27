@@ -1,249 +1,166 @@
-{% extends "layout.html" %}
-
-{% block page_title %}
-  2FA - GOV.UK prototype
-{% endblock %}
-
-{% block service_name %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% extends "layout.html" %} {% block page_title %} 2FA - GOV.UK prototype {% endblock %} {% block service_name %}
     <nav id="proposition-menu">
-      <a href="#" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
-      <ul id="proposition-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Your profile</a></li>
-        <li><a href="#">Sign out</a></li>
-      </ul>
-    </nav>
-{% endblock %}
-
-
-{% block content %}
-
-<link href="https://ci.test.mot-testing.service.gov.uk/assets/stylesheets/dvsa.css" media="screen" rel="stylesheet" />
-
-<style type="text/css">
-.c-mailbox-status a {
-    text-decoration: none;
-}
-</style>
-
-<div class="phase-banner" style="margin: 0 auto; width: 960px;">
-    <p>
-        <strong class="phase-tag">BETA</strong>
-        <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
-    </p>
-</div>
-
-
-<section class="c-home-hero">
-    <div class="o-wrapper u-clearfix">
-        <div class="c-home-hero__content">
-            <h1 class="c-home-hero__title">
-                Your home
-            </h1>
-        </div>
-
-        <div id="hero-actions" class="c-home-hero__actions">
-
+        <a href="#" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+        <ul id="proposition-links">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Your profile</a>
+            </li>
+            <li>
+                <a href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>{% endblock %} {% block content %}
+    <link href="https://ci.test.mot-testing.service.gov.uk/assets/stylesheets/dvsa.css" media="screen" rel="stylesheet">
+    <style type="text/css">
+    .c-mailbox-status a {
+       text-decoration: none;
+    }
+    </style>
+    <div class="phase-banner" style="margin: 0 auto; width: 960px;">
+        <p><strong class="phase-tag">BETA</strong> <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span></p>
+    </div>
+    <section class="c-home-hero">
+        <div class="o-wrapper u-clearfix">
+            <div class="c-home-hero__content">
+                <h1 class="c-home-hero__title">Your home</h1>
+            </div>
+            
+            <div class="c-home-hero__actions" id="hero-actions">
                 <ul class="c-action-list">
-
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="#">
-                            AE information
-                        </a>
+                        <a class="c-action-list__link" href="#">AE information</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="site-information.html">
-                            Site information
-                        </a>
+                        <a class="c-action-list__link" href="site-information.html">Site information</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="#"
-                           id="action-start-user-search">
-                            User search
-                        </a>
+                        <a class="c-action-list__link" href="#" id="action-start-user-search">User search</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="#" id="action-start-certificate-reissue">
-                            Replacement/duplicate certificate
-                        </a>
+                        <a class="c-action-list__link" href="#" id="action-start-certificate-reissue">Replacement/duplicate certificate</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="#">
-                            Vehicle information
-                        </a>
+                        <a class="c-action-list__link" href="#">Vehicle information</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="#">
-                            MOT tests
-                        </a> (comparison of tests available)
+                        <a class="c-action-list__link" href="#">MOT tests</a> (comparison of tests available)
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="#" id="demo-test-requests" >
-                            Demo test requests
-                        </a>
+                        <a class="c-action-list__link" href="#" id="demo-test-requests">Demo test requests</a>
                     </li>
-
                 </ul>
             </div>
-
         </div>
+    </section>
 
-</section>
-
-<main id="content" role="main" style="padding-bottom: 0px;">
-
-    <div class="grid-row">
-        <div class="column-half">
-            <section class="c-home-block" id="special-notice-list">
-
-                <header class="c-home-block__head">
-                    <h2 class="c-home-block__title">
-                        <a id="action-view-all-special-notices" href="#">Special notices</a>
-                    </h2>
-                </header>
-
-                <a href="#" class="c-mailbox-status" id="unread-special-notice-link">
-                    <span class="c-mailbox-status__count">0</span>
-                    <span class="c-mailbox-status__type">
-                        unread</span>
-                </a>
-
-                <a href="#" class="c-mailbox-status" id="overdue-unread-special-notice-link">
-                    <span class="c-mailbox-status__count">0</span>
-                    <span class="c-mailbox-status__type">
-                        overdue</span>
-                </a>
-
-            </section>
-
-            <section class="c-home-block" id="notification-list">
-
-                <header class="c-home-block__head">
-                    <h2 class="c-home-block__title">
-                        <a href="#">Notifications</a>
-                    </h2>
-                </header>
-
-                <div class="c-mailbox-status" id="unread-notification-count">
-                    <a href="#">
-                        <strong class="c-mailbox-status__count">1</strong>
+    <main id="content" role="main" style="padding-bottom: 0px;">
+        <div class="grid-row">
+            <div class="column-half">
+                <section class="c-home-block" id="special-notice-list">
+                    <header class="c-home-block__head">
+                        <h2 class="c-home-block__title"><a href="#" id="action-view-all-special-notices">Special notices</a></h2>
+                    </header>
+                    <a class="c-mailbox-status" href="#" id="unread-special-notice-link">
+                        <span class="c-mailbox-status__count">0</span> 
                         <span class="c-mailbox-status__type">unread</span>
-                    </a>
+                    </a> 
+                    <a class="c-mailbox-status" href="#" id="overdue-unread-special-notice-link"><span class="c-mailbox-status__count">0</span> <span class="c-mailbox-status__type">overdue</span></a>
+                </section>
+
+                <section class="c-home-block" id="notification-list">
+                    <header class="c-home-block__head">
+                        <h2 class="c-home-block__title"><a href="#">Notifications</a></h2>
+                    </header>
+                    <div class="c-mailbox-status" id="unread-notification-count">
+                        <a href="#"><strong class="c-mailbox-status__count">1</strong> <span class="c-mailbox-status__type">unread</span></a>
+                    </div>
+                    <div class="u-space-b15 u-pad-t10">
+                        <a href="#">View all notifications</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="column-half">
+                <section class="c-home-block">
+                    <header class="c-home-block__head">
+                        <h2 class="c-home-block__title">Authorised Examiner management</h2>
+                    </header>
+                    <ul>
+                        <li class="u-space-b10">
+                            <a href="#" id="createAuthorisedExaminerLink">Create an Authorised Examiner</a>
+                        </li>
+                        <li>
+                            <a href="#" id="action-create-vts">Create a site</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="c-home-block">
+                    <header class="c-home-block__head">
+                        <h2 class="c-home-block__title">Training</h2>
+                    </header>
+                    <p>Practice on any class of vehicle without using slots or recording the outcome.</p>
+                    <p><a class="button" href="#" id="action-start-mot-demonstration">Start training test</a></p>
                 </div>
-
-
-                <div class="u-space-b15 u-pad-t10">
-                    <a href="#">
-                        View all notifications
-                    </a>
-                </div>
-
-            </section>
-
-        </div>
-
-        <div class="column-half">
-            <section class="c-home-block">
-                <header class="c-home-block__head">
-                    <h2 class="c-home-block__title">Authorised Examiner management</h2>
-                </header>
-                <ul>
-                    <li class="u-space-b10">
-                        <a href="#" id="createAuthorisedExaminerLink">
-                            Create an Authorised Examiner
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                           id="action-create-vts">
-                            Create a site
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-            <div class="c-home-block">
-                <header class="c-home-block__head">
-                    <h2 class="c-home-block__title">Training</h2>
-                </header>
-
-                <p>Practice on any class of vehicle without using slots or recording the outcome.</p>
-
-                <p>
-                    <a href="#" class="button" id="action-start-mot-demonstration">
-                        Start training test
-                    </a>
-                </p>
-                </div>
-
                 <div class="c-home-block">
                     <header class="c-home-block__head">
                         <h2 class="c-home-block__title">Non-MOT test</h2>
                     </header>
-
                     <p>A non-MOT test will produce a test number and VT32/VE certificate. It will not show on a vehicle's MOT history.</p>
-
-                    <p>
-                        <a href="#" class="button" id="action-start-non-mot">
-                            Start a non-MOT test
-                        </a>
-                    </p>
+                    <p><a class="button" href="#" id="action-start-non-mot">Start a non-MOT test</a></p>
                 </div>
-
             </div>
-
         </div>
+    </main><!-- /container -->
 
-    </div>
-
-    </div>
-
-
-</main> <!-- /container -->
-
-<footer class="group js-footer" id="footer">
-    <div class="footer-wrapper">
-
-        <div class="footer-categories">
-            <div class="footer-resources--two-thirds">
-                <h2 class="footer-resources__header">Resources on GOV.UK</h2>
-                <ul>
-                    <li>
-                        <a id="resources_0" href="https://www.gov.uk/government/publications/motorcycle-mot-inspection-checklist-vt-29m">
-                            Motorcycle inspection checklist for class 1 and 2 (VT29M)</a>
-                            </li>
-                    <li>
-                        <a id="resources_1" href="https://www.gov.uk/government/publications/mot-inspection-checklist-vt-29">
-                            Vehicle inspection checklist for class 3, 4, 5 and 7 (VT29)</a>
-                            </li>
-                    <li>
-                        <a id="resources_2" href="https://www.gov.uk/government/publications/in-service-exhaust-emission-standards-for-road-vehicles">
-                            In service exhaust emission standards for road vehicles</a>
-                            </li>
-                    <li>
-                        <a id="resources_3" href="#">
-                            Special notices</a>
-                            </li>
-            </ul>
-            </div>
-            <div class="footer-resources--one-third">
-                <h2 class="footer-resources__header">MOT manuals and guide</h2>
-                <ul>
-                    <li>
-                        <a id="manuals_0" href="#" target="_blank">
-                                Manual for class 1 and 2 vehicles</a>
+    <footer class="group js-footer" id="footer">
+        <div class="footer-wrapper">
+            <div class="footer-categories">
+                <div class="footer-resources--two-thirds">
+                    <h2 class="footer-resources__header">Resources on GOV.UK</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/motorcycle-mot-inspection-checklist-vt-29m" id="resources_0">Motorcycle inspection checklist for class 1 and 2 (VT29M)</a>
                         </li>
-                            <li>
-                            <a id="manuals_1" href="#" target="_blank">
-                                Manual for class 3, 4, 5, and 7 vehicles</a>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/mot-inspection-checklist-vt-29" id="resources_1">Vehicle inspection checklist for class 3, 4, 5 and 7 (VT29)</a>
                         </li>
-                            <li>
-                            <a id="manuals_2" href="https://www.gov.uk/government/publications/mot-testing-guide" target="_blank">
-                                MOT testing guide </a>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/in-service-exhaust-emission-standards-for-road-vehicles" id="resources_2">In service exhaust emission standards for road vehicles</a>
+                        </li>
+                        <li>
+                            <a href="#" id="resources_3">Special notices</a>
                         </li>
                     </ul>
-            </div>
-            <hr>
-        </div>
+                </div>
 
-{% endblock %}
+                <div class="footer-resources--one-third">
+                    <h2 class="footer-resources__header">MOT manuals and guide</h2>
+                    <ul>
+                        <li>
+                            <a href="#" id="manuals_0" target="_blank">Manual for class 1 and 2 vehicles</a>
+                        </li>
+                        <li>
+                            <a href="#" id="manuals_1" target="_blank">Manual for class 3, 4, 5, and 7 vehicles</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/mot-testing-guide" id="manuals_2" target="_blank">MOT testing guide</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+            </div>{% endblock %}
+        </div>
+    </footer>
+</body>
+</html>
