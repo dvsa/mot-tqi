@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  2FA - GOV.UK prototype
+{% endblock %}
+
+{% block service_name %}
+    <nav id="proposition-menu">
+      <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+      <ul id="proposition-links">
+        <li><a href="url-to-page-1">Home</a></li>
+        <li><a href="url-to-page-2">Your profile</a></li>
+        <li><a href="url-to-page-2">Sign out</a></li>
+      </ul>
+    </nav>
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+      <h1 class="heading-xlarge">
+        Password error messages
+      </h1>
+
+      <p><span class="heading-small">Choose error message</span></p>
+
+      <p><a href="/2FA/Password/empty/">Empty fields</a></p>
+      
+      <p><a href="/2FA/Password/8-or-more/">Not enough characters</a></p>
+
+      <p><a href="/2FA/Password/no-numbers/">1 or more numbers</a></p>
+
+      <p><a href="/2FA/Password/blocklist/">Block list Password</a></p>
+
+      <p><a href="/2FA/Password/company-name/">Contains company name</a></p>
+
+      <p><a href="/2FA/Password/contains-real-name/">Contains real name</a></p>
+
+      <p><a href="/2FA/Password/same-as-before/">Previously used password</a></p>
+
+      <p><a href="/2FA/Password/username/">Username</a></p>
+
+      <p><a href="/2FA/Password/Upper-lowercase/">Upper/ Lowercase</a></p>
+
+      <hr>
+      
+</main>
+
+{% endblock %}

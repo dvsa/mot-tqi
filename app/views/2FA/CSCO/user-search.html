@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  MOT testing service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+  
+
+     
+        <!--<a class="link-back" href="index">Back</a> -->
+        <h1 class="form-title heading-xlarge">
+          <span class="heading-secondary">User Management</span>
+          User search
+        </h1>
+        <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <div class="panel panel-border-narrow">
+                <p>
+                    Using more than one search criteria will improve your chances of finding a particular user. A good search uses last name, date of birth and postcode.
+                </p>
+            </div>
+            <form action="search-results" method="post" class="form">
+                <fieldset>
+
+                    <!-- User name -->
+                    <div class="form-group">
+                      <label class="form-label" for="User-id">User name</label>
+                      <input type="text" class="form-control" id="User-id">
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="Forename">First name</label>
+                      <input type="forename" class="form-control" id="Forename">
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="surname">Last name</label>
+                      <input type="surname" class="form-control" id="surname">
+                    </div>
+                    
+                    <details>
+
+                    <summary><span class="summary">Additional search criteria</span></summary>
+
+                    <div class="panel panel-border-narrow">
+
+                        <div class="form-group">
+                            <label class="form-label" for="surname">Email address</label>
+                            <input type="surname" class="form-control" id="surname">
+                        </div>
+
+                    <fieldset>
+                        <legend>
+                            <span class="form-label-bold">
+                            Date of birth
+                            </span>
+                            <span class="form-hint">For example, 31 3 1980</span>
+                        </legend>
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="dob-day">Day</label>
+                                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="dob-month">Month</label>
+                                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="dob-year">Year</label>
+                                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                        <div class="form-group" style="margin-top:20px;">
+                            <label class="form-label" for="Postcode">Postcode</label>
+                            <input type="Postcode" class="form-control" id="Postcode">
+                        </div>
+
+                    </div>
+
+                    </details>
+
+                 </fieldset>
+         
+            <input class="button" type="submit" value="Search">
+            </form>
+
+        </div>
+      
+        </div>
+        </div>
+  </div>
+</main>
+
+{% endblock %}
