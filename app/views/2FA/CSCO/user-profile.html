@@ -1,0 +1,228 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    2FA - GOV.UK prototype
+{% endblock %}
+
+{% block service_name %}
+    <nav id="proposition-menu">
+        <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+        <ul id="proposition-links">
+            <li><a href="url-to-page-1">Home</a></li>
+            <li><a href="url-to-page-2">Your profile</a></li>
+            <li><a href="url-to-page-2">Sign out</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+
+{% block content %}
+
+<style type="text/css">
+.related h2 {
+    font-size: 14pt;
+}
+
+</style>
+
+<main id="content" role="main">
+
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="/">Home</a></li>
+             <li><a href="/">Users</a></li>
+            <li>User profile</li>
+        </ol>
+    </div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <!-- Titles -->
+
+            <header class="content-header">
+
+                <h1 class="heading-xlarge">
+                    <span class="heading-secondary">User profile</span>
+                    Bertie Lorenzo Gribben
+                </h1>
+
+            </header>                
+
+            <!-- END OF Titles-->
+
+            <!-- CONTENT -->
+
+            <div class="row contents">
+                
+                <div class="col-lg-12">
+          
+
+                    <h3 class="heading-medium">Personal details</h3>
+                    
+                    <table id="personal_details">
+                        <tbody>
+                            <tr>
+                                <th>Name</th>
+                                <td id="display-name">Mr Bertie Lorenzo Gribben</td>
+                            </tr>
+                            <tr>
+                                <th>User ID</th>
+                                <td id="display-username">GRIB1234</td>
+                            </tr>
+                            <tr>
+                                <th>Date of birth</th>
+                                <td id="date-of-birth">2 October 1975</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>Driving licence</th>
+                                <td id="drivingLicence">DUNAY504037VJ9KA<br><span>GB licence</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <h3 class="heading-medium">Contact details</h3>
+                    <table id="contact_details">
+                        <tbody>
+                            <tr>
+                                <th>Email</th>
+                                <td id="email-address">
+                                    b.gribben@example.com                
+                                    <a href="#">Change<span class="visuallyhidden"> Email</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Address</th>
+                                <td id="full-address">
+                                    98, Tip Way <br>Sudbury <br>Suffolk <br>Suffolk <br>SW13 6ZU<br><a href="#">Change</a>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Telephone</th>
+                                <td id="telephone-number">
+                                    04509100000 <a href="#" title="Change Telephone">Change<span class="visuallyhidden"> Telephone</span></a>            
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3 class="heading-medium">Security card</h3>
+
+                    <table id="security-card">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Activation date
+                                </th>
+                                <td id="activation_date">
+                                    3 December 2016</td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Serial number
+                                </th>
+                                <td id="serial_number">
+                                    4610900000046109</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><a href="notifications">Return home</a></p>
+
+                    </div>
+                </div>
+            
+        
+                </div>
+
+                <!-- END OF LEFT-HAND COLUMN -->
+
+                <!-- RIGHT-HAND COLUMN -->
+
+                <div class="column-third">
+      
+                    <div class="related">
+
+                        <ul>
+
+                            <li>
+                                <span>Qualified</span>
+                                <strong>Group A</strong>
+                                <br>
+                                <span>Class 1 and 2</span>
+                            </li>
+
+                            <li>
+                                <span>Not Applied</span>
+                                <strong>Group B </strong>
+                                <br>
+                                <span>Class 3, 4, 5 and 7</span>
+                            </li>
+                    
+                        </ul>
+
+                        <div id="account_security">
+
+                            <h2 class="heading-large">Account security</h2>
+                            <ul>                                       
+                                <li>
+                                    <a href="#">Change your password</a>
+                                </li>
+                                <li>
+                                    <a href="#">Change your security questions</a>
+                                </li> 
+                                <li>
+                                    <a href="extend-grace">Extend temporary sign in period</a>
+                                </li>                                       
+                            </ul>
+                        </div>
+
+                        <div id="related">
+                            <h2 class="heading-large">Related</h2>
+                            <ul>                                        
+                                <li>
+                                    <a class="" href="#">Roles and associations</a>
+                                </li>
+                                <li>
+                                    <a class="" href="#">Test logs</a>
+                                </li>
+                                <li>
+                                    <a class="" href="#">Test quality information</a>
+                                </li>        
+                            </ul>
+                        </div>
+
+                        <div id="annual_assessments">                            
+                            <h2 class="heading-large">Annual assessments</h2>
+                            <ul>                                        
+                                <li>
+                                    <a class="" href="#">View or add annual assessment certificates</a>
+                                </li>
+                          </ul>
+                        </div>
+                   
+                        <div id="qualifications">                                    
+                            <h2 class="heading-large">Initial training and demonstration tests</h2>
+                            <ul >                                        
+                                <li>
+                                    <a class="" href="#">View or add initial training qualifications</a>
+                                </li>                                        
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+
+    </div>
+
+      
+</main>
+
+{% endblock %}

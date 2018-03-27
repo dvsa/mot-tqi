@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  2FA - GOV.UK prototype
+{% endblock %}
+
+{% block service_name %}
+    <nav id="proposition-menu">
+        <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+        <ul id="proposition-links">
+            <li><a href="url-to-page-1">Home</a></li>
+            <li><a href="url-to-page-2">Your profile</a></li>
+            <li><a href="url-to-page-2">Sign out</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="column-two-thirds">
+
+        <div class="breadcrumbs">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Users</a></li>
+            <li><a href="/">User profile</a></li>
+            <li>Security</li>
+          </ol>
+        </div>
+
+        <form action="success" method="post" class="form">
+         
+            <h1 class="heading-xlarge">
+                <span class="heading-secondary">GRIB1234, Bertie Lorenzo Gribben</span>
+                Extend grace period
+            </h1>
+
+            <p>
+                When you extend the grace period, they will be able to log in without security card for <strong>5 more days</strong>.
+            </p>
+
+            <div class="form-group">
+              <input type="submit" class="button" href="success" value="Continue">
+            </div>
+            
+            <a href="">Cancel and return to home page</a>
+        </form>
+   </div>   
+</main>
+
+{% endblock %}
