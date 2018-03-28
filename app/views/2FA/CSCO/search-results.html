@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  MOT testing service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+  
+
+     
+        <!--<a class="link-back" href="index">Back</a> -->
+         
+        <h1 class="form-title heading-xlarge">
+          <span class="heading-secondary">User search</span>
+          Search results
+        </h1>
+        <div class="grid-row">
+        <div class="column-full">
+            <p><strong style="font-weight:bold;">1</strong> result(s) found for <strong style="font-weight:bold;">GRIB1234</strong></p>
+        
+            <table>
+                <thead>
+                    <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date of birth</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Postcode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row"><a href="user-profile">Bertie Lorenzo Gribben</a></th>
+                    <td>2 October 1975</td>
+                    <td>98, Tip Way, Sudbury, Suffolk</td>
+                    <td>SW13 6ZU</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br>
+         
+            <a href="user-search">Back to user search</a>
+            </form>
+
+        </div>
+      
+        </div>
+        </div>
+  </div>
+</main>
+
+{% endblock %}

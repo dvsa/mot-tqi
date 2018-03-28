@@ -28,50 +28,75 @@
     <div class="phase-banner" style="margin: 0 auto; width: 960px;">
         <p><strong class="phase-tag">BETA</strong> <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span></p>
     </div>
-
-
     <main id="content">
         <div class="container">
+
             <div class="header-context" id="global-breadcrumb">
                 <nav>
                     <ol class="group">
                         <li id="breadcrumb-0">
-                            <a href="/">Home</a>
+                            <a href="#">Home</a>
                         </li>
-                        <li id="breadcrumb-1">Search site information</li>
+                        <li id="breadcrumb-1">
+                            <a href="#">CHERRY BUSSA</a>
+                        </li>
+                        <li id="breadcrumb-2">
+                            <a href="#">Example Site</a>
+                        </li>
+                        <li id="breadcrumb-3">Site review</li>
                     </ol>
                 </nav>
             </div>
+     
             <header class="content-header">
-                <h6 class="heading-medium" style="margin-bottom:15px;"><span class="content-header__title">Is this the VTS you are in?</span></h6>
-                <p style="margin-bottom:10px; font-weight: bold;">VTS001084</p>
-                <p style="margin-bottom:10px;">Nessie MOT Centre</p>
-                <p style="margin-bottom:10px;">2118, Tabletop Rise, Dunbar</p>
-                <p style="margin-bottom:10px;">East Lothian, DN10 2HW</p>
+                <h1><span class="content-header__type">Vehicle Testing Station</span> <span class="content-header__title">Site review</span></h1>
             </header>
-            <a href="site-informationcopy.html">Change vehicle testing station</a>
-            <nav class="content-navigation">
-                 <a href="site-details.html"><input class="button" id="submitSiteSearch" name="" type="button" value="Yes, I am here"></a>
-                <ul class="content-navigation__secondary">
-                    <li>
-                        <a href="/" id="navigation-link-">Back</a>
-                    </li>
-                </ul>
-            </nav>
-            
             <div class="row contents">
                 <div class="col-lg-12">
-                    <form action="/vehicle-testing-station/result" id="siteSearchForm" method="get" name="siteSearchForm">
-                        <fieldset>
-                            <legend class="form-title heading-large" id="searchSiteLegend"></legend>
-                        </fieldset>
-                    </form>
-                </div><!-- /container -->
+
+                    <a class="key-value-list__action" href="site-assessment-enter.html" id="site-assessment-action-link">Enter site review</a>
+                    <table class="key-value-list">
+                        <thead>
+                            <tr>
+                                <th class="" colspan="2"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="key-value-list__key">Site review risk score</th>
+                                <td class="key-value-list__value key-value-list__value" id="risk-assessment-score"><span class="label-value--green" id="risk-score-rag-status">Satisfactory</span></td>
+                            </tr>
+                            <tr>
+                                <th class="key-value-list__key">DVSA examiner</th>
+                                <td class="key-value-list__value key-value-list__value" id="dvsa-examiner">Janyce Tisa Amento<span class="key-value-list__meta">User ID:</span></td>
+                            </tr>
+                            <tr>
+                                <th class="key-value-list__key">AE representative</th>
+                                <td class="key-value-list__value key-value-list__value" id="ae-representative">Jacqueline Kalima, NT AE<span class="key-value-list__meta">User ID: KALI1927</span></td>
+                            </tr>
+                            <tr>
+                                <th class="key-value-list__key">Tester</th>
+                                <td class="key-value-list__value key-value-list__value" id="tester">Jacqueline Terese Kalima<span class="key-value-list__meta">User ID: KALI1927</span></td>
+                            </tr>
+                            <tr>
+                                <th class="key-value-list__key">Date of review</th>
+                                <td class="key-value-list__value key-value-list__value" id="date-of-assessment">1 March 2016</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav class="content-navigation">
+                        <ul class="content-navigation__secondary">
+                            <li>
+                                <a class="btn btn-primary" href="#" id="returnDashboard">Return to VTS overview</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
+        </div><!-- /container -->
     </main>
 
-
+    
     <footer class="group js-footer" id="footer">
         <div class="footer-wrapper">
             <div class="footer-categories">
@@ -92,6 +117,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="footer-resources--one-third">
                     <h2 class="footer-resources__header">MOT manuals and guide</h2>
                     <ul>

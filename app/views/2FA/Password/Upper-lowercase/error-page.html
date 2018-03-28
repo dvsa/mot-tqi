@@ -179,19 +179,16 @@
                 </h2>
 
                 <ul class="error-summary-list">
-                    <li><a href="#oldPassword">Current password - enter your current password</a></li>
-                    <li><a href="#password">New password - enter a password</a></li>
-                    <li><a href="#confirm_password">Re-type your new password - re-type your password</a></li>
+                    <li><a href="#password">New password - Must contain both upper and lower case characters</a></li>
                 </ul>
 
             </div>
                 <fieldset>
                     <legend class="heading-large">Current password</legend>
                     
-                    <div class="form-group form-group-error">
+                    <div class="form-group">
 
                         <label for="oldPassword" class="form-label ">Current password
-                            <span class="error-message">Enter your current password</span>
                         </label>        
                         <input type="password" id="oldPassword" name="oldPassword" autocomplete="off" value="" class="form-control">
                     </div>
@@ -219,14 +216,13 @@
                         <legend class="form-title heading-large" id=""></legend>
                         <div class="form-group form-group-error">
                             <label for="password" class="form-label">New password
-                                <span class="error-message">Enter new password</span>
+                                <span class="error-message">Must contain both upper and lower case characters</span>
                             </label>
                             <input type="password" name="password" id="password" class="form-control" value="">
                         </div>
  
-                        <div class="form-group form-group-error">
+                        <div class="form-group">
                             <label for="confirm_password" class="form-label">Confirm new password
-                                <span class="error-message">Re-type your password</span>
                             </label>
                             <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="">
                         </div>

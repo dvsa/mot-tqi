@@ -6,16 +6,16 @@
 <body>
     {% extends "layout.html" %} {% block page_title %} 2FA - GOV.UK prototype {% endblock %} {% block service_name %}
     <nav id="proposition-menu">
-        <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+        <a href="#" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
         <ul id="proposition-links">
             <li>
-                <a href="url-to-page-1">Home</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a href="url-to-page-2">Your profile</a>
+                <a href="#">Your profile</a>
             </li>
             <li>
-                <a href="url-to-page-2">Sign out</a>
+                <a href="#">Sign out</a>
             </li>
         </ul>
     </nav>{% endblock %} {% block content %}
@@ -34,26 +34,29 @@
                 <nav>
                     <ol class="group">
                         <li id="breadcrumb-0">
-                            <a href="/">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li id="breadcrumb-1">Search site information</li>
                     </ol>
                 </nav>
             </div>
+
             <header class="content-header">
                 <h1><span class="content-header__type">Site search</span> <span class="content-header__title">Search for site information by...</span></h1>
             </header>
+
             <div class="row contents">
                 <div class="col-lg-12">
                     <details>
-                        <summary aria-controls="details-content-0" aria-expanded="false" role="button" tabindex="0">
+                        <summary aria-controls="details-content-0" aria-expanded="true" role="button" tabindex="0">
                             <span class="summary">Help with Site Search</span>
                         </summary>
-                        <div aria-hidden="true" class="panel-indent" id="details-content-0" style="display: none;">
+                        <div aria-hidden="false" class="panel-indent" id="details-content-0" style="display: block;">
                             <p>You can narrow the number of Site matches found by adding more of these optional search filters. You may enter part or all of a search term (with 3 or more characters), wildcards are not needed.<br>
                             Note that you cannot search by vehicle test classes alone.</p>
                         </div>
                     </details>
+
                     <form action="/vehicle-testing-station/result" id="siteSearchForm" method="get" name="siteSearchForm">
                         <fieldset>
                             <legend class="form-title heading-large" id="searchSiteLegend"></legend>
@@ -71,7 +74,23 @@
                             </div>
                             <div class="form-group">
                                 <fieldset class="">
-                                    <legend class="form-label">Classes of vehicles tested</legend> <label class="block-label" for="site_vehicle_class[]1"><input id="site_vehicle_class[]1" name="site_vehicle_class[]" type="checkbox" value="1"> Class 1</label> <label class="block-label" for="site_vehicle_class[]2"><input id="site_vehicle_class[]2" name="site_vehicle_class[]" type="checkbox" value="2"> Class 2</label> <label class="block-label" for="site_vehicle_class[]3"><input id="site_vehicle_class[]3" name="site_vehicle_class[]" type="checkbox" value="3"> Class 3</label> <label class="block-label" for="site_vehicle_class[]4"><input id="site_vehicle_class[]4" name="site_vehicle_class[]" type="checkbox" value="4"> Class 4</label> <label class="block-label" for="site_vehicle_class[]5"><input id="site_vehicle_class[]5" name="site_vehicle_class[]" type="checkbox" value="5"> Class 5</label> <label class="block-label" for="site_vehicle_class[]7"><input id="site_vehicle_class[]7" name="site_vehicle_class[]" type="checkbox" value="7"> Class 7</label>
+                                    <legend class="form-label">Classes of vehicles tested</legend> 
+                                        <label class="block-label" for="site_vehicle_class[]1">
+                                            <input id="site_vehicle_class[]1" name="site_vehicle_class[]" type="checkbox" value="1">Class 1</label>
+
+                                             <label class="block-label" for="site_vehicle_class[]2">
+                                                <input id="site_vehicle_class[]2" name="site_vehicle_class[]" type="checkbox" value="2">Class 2</label>
+
+                                             <label class="block-label" for="site_vehicle_class[]3">
+                                                 <input id="site_vehicle_class[]3" name="site_vehicle_class[]" type="checkbox" value="3">Class 3</label> 
+
+                                             <label class="block-label" for="site_vehicle_class[]4">
+                                                <input id="site_vehicle_class[]4" name="site_vehicle_class[]" type="checkbox" value="4"> Class 4</label> 
+
+                                             <label class="block-label" for="site_vehicle_class[]5">
+                                                <input id="site_vehicle_class[]5" name="site_vehicle_class[]" type="checkbox" value="5"> Class 5</label> 
+
+                                            <label class="block-label" for="site_vehicle_class[]7"><input id="site_vehicle_class[]7" name="site_vehicle_class[]" type="checkbox" value="7"> Class 7</label>
                                 </fieldset>
                             </div>
                         </fieldset>
@@ -79,7 +98,7 @@
                              <a href="site-details.html"><input class="button" id="submitSiteSearch" name="" type="button" value="Search"></a>
                             <ul class="content-navigation__secondary">
                                 <li>
-                                    <a href="/" id="navigation-link-">Back</a>
+                                    <a href="index.html" id="navigation-link-">Back</a>
                                 </li>
                             </ul>
                         </nav>
@@ -88,6 +107,7 @@
             </div>
         </div><!-- /container -->
     </main>
+
 
     <footer class="group js-footer" id="footer">
         <div class="footer-wrapper">
@@ -109,6 +129,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="footer-resources--one-third">
                     <h2 class="footer-resources__header">MOT manuals and guide</h2>
                     <ul>
@@ -123,7 +144,7 @@
                         </li>
                     </ul>
                 </div>
-
+                
                 <hr>
             </div>{% endblock %}
         </div>

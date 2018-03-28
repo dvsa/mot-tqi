@@ -6,16 +6,16 @@
 <body>
     {% extends "layout.html" %} {% block page_title %} 2FA - GOV.UK prototype {% endblock %} {% block service_name %}
     <nav id="proposition-menu">
-        <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+        <a href="#" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
         <ul id="proposition-links">
             <li>
-                <a href="url-to-page-1">Home</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a href="url-to-page-2">Your profile</a>
+                <a href="#">Your profile</a>
             </li>
             <li>
-                <a href="url-to-page-2">Sign out</a>
+                <a href="#">Sign out</a>
             </li>
         </ul>
     </nav>{% endblock %} {% block content %}
@@ -28,52 +28,66 @@
     <div class="phase-banner" style="margin: 0 auto; width: 960px;">
         <p><strong class="phase-tag">BETA</strong> <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span></p>
     </div>
-    
     <main id="content">
         <div class="container">
             <div class="organisation-logo organisation-logo--md">
                 Driver &amp; Vehicle Standards Agency
             </div>
+
             <header class="content-header">
                 <h1><span class="content-header__type"></span> <span class="content-header__title">MOT testing service</span></h1>
             </header>
 
             <div class="row contents">
                 <div class="col-lg-12">
+ 
                     <div class="grid-row">
                         <div class="__sign-in">
                             <div class="column-half">
                                 <form action="/login" autocomplete="new-password" id="Login" method="post" name="Login">
                                     <fieldset>
-                                        <legend class="form-title heading-large">Sign in</legend> <input class="form-control form-control-1-2" id="IDToken1" name="IDToken1" style="width: 1px; position: absolute; left: -9999px;" tabindex="-1" type="text" value=""> <input autocomplete="off" class="form-control form-control-1-2" id="IDToken2" name="IDToken2" style="width: 1px; position: absolute; left: -9999px;" tabindex="-1" type="password" value="">
+                                        <legend class="form-title heading-large">Sign in</legend>
+                                            <input class="form-control form-control-1-2" id="IDToken1" name="IDToken1" style="width: 1px; position: absolute; left: -9999px;" tabindex="-1" type="text" value=""> 
+                                            <input autocomplete="off" class="form-control form-control-1-2" id="IDToken2" name="IDToken2" style="width: 1px; position: absolute; left: -9999px;" tabindex="-1" type="password" value="">
+
                                         <div class="form-group form-group">
-                                            <label class="form-label" for="_tid10d039122">User ID</label> <input class="form-control form-control-1-2" id="_tid10d039122" name="_tid10d039122" type="text" value="">
+                                            <label class="form-label" for="_tid10d039122">User ID</label> 
+                                            <input class="form-control form-control-1-2" id="_tid10d039122" name="_tid10d039122" type="text" value="">
                                         </div>
+
                                         <div class="form-group form-group">
-                                            <label class="form-label" for="_tid20d039122">Password</label> <input autocomplete="off" class="form-control form-control-1-2" id="_tid20d039122" name="_tid20d039122" type="password" value="">
-                                        </div><input name="_csrf_token" type="hidden" value="A504D619-3279-7377-F91C-7622F9D778CE"> <input id="goto" name="goto" type="hidden" value="aHR0cHM6Ly9jaS50ZXN0Lm1vdC10ZXN0aW5nLnNlcnZpY2UuZ292LnVrOjQ0My8=">
-                                    </fieldset><a href="/forgotten-password" id="forgotten-or-change-password">Forgotten your password?</a>
+                                            <label class="form-label" for="_tid20d039122">Password</label> 
+                                            <input autocomplete="off" class="form-control form-control-1-2" id="_tid20d039122" name="_tid20d039122" type="password" value="">
+                                        </div>
+                                        <input name="_csrf_token" type="hidden" value="A504D619-3279-7377-F91C-7622F9D778CE"> 
+                                        <input id="goto" name="goto" type="hidden" value="aHR0cHM6Ly9jaS50ZXN0Lm1vdC10ZXN0aW5nLnNlcnZpY2UuZ292LnVrOjQ0My8=">
+                                    </fieldset>
+
+                                    <a href="#" id="forgotten-or-change-password">Forgotten your password?</a>
                                     <nav class="content-navigation">
-                                        <a href="index.html"><input class="button" id="submitSiteSearch" name="" type="button" value="Sign in"></a>
-                                    </nav><input name="IDButton" style="display: none;" type="hidden">
+                                        <a href="index.html">
+                                            <input class="button" id="submitSiteSearch" name="" type="button" value="Sign in"></a>
+                                    </nav>
+                                    <input name="IDButton" style="display: none;" type="hidden">
                                 </form>
                             </div>
                         </div>
+
                         <div class="column-half">
                             <h3 class="heading-medium">Sign in help</h3>
                             <details role="group">
-                                <summary aria-controls="details-content-3" aria-expanded="false" role="button" tabindex="0">
+                                <summary aria-controls="details-content-3" aria-expanded="true" role="button" tabindex="0">
                                     <span class="summary">Lost, forgotten or damaged security card</span>
                                 </summary>
-                                <div aria-hidden="true" class="panel panel-indent" id="details-content-3" style="display: none;">
+                                <div aria-hidden="false" class="panel panel-indent" id="details-content-3" style="display: block;">
                                     <p>Sign in with your user ID and password. You’ll then see an option to sign in without your card and order a new one if you need to.</p>
                                 </div>
                             </details>
                             <details role="group">
-                                <summary aria-controls="details-content-0" aria-expanded="false" role="button" tabindex="0">
+                                <summary aria-controls="details-content-0" aria-expanded="true" role="button" tabindex="0">
                                     <span class="summary" id="do-not-have-account-section">Don't have an account</span>
                                 </summary>
-                                <div aria-hidden="true" class="panel panel-indent" id="details-content-0" style="display: none;">
+                                <div aria-hidden="false" class="panel panel-indent" id="details-content-0" style="display: block;">
                                     <p><a href="/account/register" id="create-an-account">Create a new account</a> for the MOT testing service. Only do this if you don’t already have one.</p>
                                 </div>
                             </details>
@@ -105,6 +119,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="footer-resources--one-third">
                     <h2 class="footer-resources__header">MOT manuals and guide</h2>
                     <ul>

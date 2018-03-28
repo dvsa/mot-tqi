@@ -6,16 +6,16 @@
 <body>
     {% extends "layout.html" %} {% block page_title %} 2FA - GOV.UK prototype {% endblock %} {% block service_name %}
     <nav id="proposition-menu">
-        <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+        <a href="#" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
         <ul id="proposition-links">
             <li>
-                <a href="url-to-page-1">Home</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a href="url-to-page-2">Your profile</a>
+                <a href="#">Your profile</a>
             </li>
             <li>
-                <a href="url-to-page-2">Sign out</a>
+                <a href="#">Sign out</a>
             </li>
         </ul>
     </nav>{% endblock %} {% block content %}
@@ -33,54 +33,62 @@
             <div class="c-home-hero__content">
                 <h1 class="c-home-hero__title">Your home</h1>
             </div>
+            
             <div class="c-home-hero__actions" id="hero-actions">
                 <ul class="c-action-list">
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="/authorised-examiner/search">AE information</a>
+                        <a class="c-action-list__link" href="#">AE information</a>
                     </li>
                     <li class="c-action-list__item">
                         <a class="c-action-list__link" href="site-information.html">Site information</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="/user-admin/search" id="action-start-user-search">User search</a>
+                        <a class="c-action-list__link" href="#" id="action-start-user-search">User search</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="/replacement-certificate-vehicle-search" id="action-start-certificate-reissue">Replacement/duplicate certificate</a>
+                        <a class="c-action-list__link" href="#" id="action-start-certificate-reissue">Replacement/duplicate certificate</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="/vehicle/search">Vehicle information</a>
+                        <a class="c-action-list__link" href="#">Vehicle information</a>
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="/mot-test-search">MOT tests</a> (comparison of tests available)
+                        <a class="c-action-list__link" href="#">MOT tests</a> (comparison of tests available)
                     </li>
                     <li class="c-action-list__item">
-                        <a class="c-action-list__link" href="/user-admin/demo-test-requests" id="demo-test-requests">Demo test requests</a>
+                        <a class="c-action-list__link" href="#" id="demo-test-requests">Demo test requests</a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    
+
     <main id="content" role="main" style="padding-bottom: 0px;">
         <div class="grid-row">
             <div class="column-half">
                 <section class="c-home-block" id="special-notice-list">
                     <header class="c-home-block__head">
-                        <h2 class="c-home-block__title"><a href="special-notices" id="action-view-all-special-notices">Special notices</a></h2>
-                    </header><a class="c-mailbox-status" href="#" id="unread-special-notice-link"><span class="c-mailbox-status__count">0</span> <span class="c-mailbox-status__type">unread</span></a> <a class="c-mailbox-status" href="#" id="overdue-unread-special-notice-link"><span class="c-mailbox-status__count">0</span> <span class="c-mailbox-status__type">overdue</span></a>
+                        <h2 class="c-home-block__title"><a href="#" id="action-view-all-special-notices">Special notices</a></h2>
+                    </header>
+                    <a class="c-mailbox-status" href="#" id="unread-special-notice-link">
+                        <span class="c-mailbox-status__count">0</span> 
+                        <span class="c-mailbox-status__type">unread</span>
+                    </a> 
+                    <a class="c-mailbox-status" href="#" id="overdue-unread-special-notice-link"><span class="c-mailbox-status__count">0</span> <span class="c-mailbox-status__type">overdue</span></a>
                 </section>
+
                 <section class="c-home-block" id="notification-list">
                     <header class="c-home-block__head">
-                        <h2 class="c-home-block__title"><a href="/notification/list">Notifications</a></h2>
+                        <h2 class="c-home-block__title"><a href="#">Notifications</a></h2>
                     </header>
                     <div class="c-mailbox-status" id="unread-notification-count">
-                        <a href="notifications"><strong class="c-mailbox-status__count">1</strong> <span class="c-mailbox-status__type">unread</span></a>
+                        <a href="#"><strong class="c-mailbox-status__count">1</strong> <span class="c-mailbox-status__type">unread</span></a>
                     </div>
                     <div class="u-space-b15 u-pad-t10">
-                        <a href="/notification/list">View all notifications</a>
+                        <a href="#">View all notifications</a>
                     </div>
                 </section>
             </div>
+
             <div class="column-half">
                 <section class="c-home-block">
                     <header class="c-home-block__head">
@@ -88,31 +96,31 @@
                     </header>
                     <ul>
                         <li class="u-space-b10">
-                            <a href="/authorised-examiner/create" id="createAuthorisedExaminerLink">Create an Authorised Examiner</a>
+                            <a href="#" id="createAuthorisedExaminerLink">Create an Authorised Examiner</a>
                         </li>
                         <li>
-                            <a href="/vehicle-testing-station/create" id="action-create-vts">Create a site</a>
+                            <a href="#" id="action-create-vts">Create a site</a>
                         </li>
                     </ul>
                 </section>
+
                 <div class="c-home-block">
                     <header class="c-home-block__head">
                         <h2 class="c-home-block__title">Training</h2>
                     </header>
                     <p>Practice on any class of vehicle without using slots or recording the outcome.</p>
-                    <p><a class="button" href="/training-test-vehicle-search" id="action-start-mot-demonstration">Start training test</a></p>
+                    <p><a class="button" href="#" id="action-start-mot-demonstration">Start training test</a></p>
                 </div>
                 <div class="c-home-block">
                     <header class="c-home-block__head">
                         <h2 class="c-home-block__title">Non-MOT test</h2>
                     </header>
                     <p>A non-MOT test will produce a test number and VT32/VE certificate. It will not show on a vehicle's MOT history.</p>
-                    <p><a class="button" href="/non-mot-test-vehicle-search" id="action-start-non-mot">Start a non-MOT test</a></p>
+                    <p><a class="button" href="#" id="action-start-non-mot">Start a non-MOT test</a></p>
                 </div>
             </div>
         </div>
     </main><!-- /container -->
-
 
     <footer class="group js-footer" id="footer">
         <div class="footer-wrapper">
@@ -130,10 +138,11 @@
                             <a href="https://www.gov.uk/government/publications/in-service-exhaust-emission-standards-for-road-vehicles" id="resources_2">In service exhaust emission standards for road vehicles</a>
                         </li>
                         <li>
-                            <a href="https://www.gov.uk/topic/mot/manuals#special-notices" id="resources_3">Special notices</a>
+                            <a href="#" id="resources_3">Special notices</a>
                         </li>
                     </ul>
                 </div>
+
                 <div class="footer-resources--one-third">
                     <h2 class="footer-resources__header">MOT manuals and guide</h2>
                     <ul>
