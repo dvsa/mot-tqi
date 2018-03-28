@@ -1,0 +1,450 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  2FA - GOV.UK prototype
+{% endblock %}
+
+{% block service_name %}
+    <nav id="proposition-menu">
+      <a href="/" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+      <ul id="proposition-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Your profile</a></li>
+        <li><a href="#">Sign out</a></li>
+      </ul>
+    </nav>
+{% endblock %}
+
+
+{% block content %}
+
+<link href="https://ci.test.mot-testing.service.gov.uk/assets/stylesheets/dvsa.css" media="screen" rel="stylesheet" />
+
+<style type="text/css">
+.c-mailbox-status a {
+    text-decoration: none;
+}
+</style>
+
+<div class="phase-banner" style="margin: 0 auto; width: 960px;">
+    <p>
+        <strong class="phase-tag">BETA</strong>
+        <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+</div>
+        <main id="content">
+
+    <div class="container">
+
+
+        <!-- Breadcrumbs -->
+                    <div id="global-breadcrumb" class="header-context">
+    <nav>
+        <ol class="group">
+            <li id="breadcrumb-0"><a href="#">Home</a></li>
+
+                            <li id="breadcrumb-1">
+                                            <a href="#">CHERRY BUSSA</a>
+                                    </li>
+                            <li id="breadcrumb-2">
+                                            <a href="#">Example Site</a>
+                                    </li>
+                            <li id="breadcrumb-3">
+                                            Enter site assessment                                    </li>
+                    </ol>
+    </nav>
+</div>
+                <!-- END -->
+
+
+                <!-- Titles -->
+                    <header class="content-header">
+    <h1>
+        <span class="content-header__type">Vehicle Testing Station</span>
+        <span class="content-header__title">Enter site assessment</span>
+            </h1>
+    </header>                <!-- END -->
+
+                    <div class="row contents">
+                <div class="col-lg-12">
+                    <!-- lede   -->
+                                        <!-- end    -->
+
+        <div class="form-group" style="margin-bottom:10px;">
+            <h3 class="heading-medium">Premises</h3>
+            <details role="group">
+              <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Clues for premises?</span></summary>
+              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+                 <p>The VTS is a safe working environment where the test bay is clearly defined and MOT equipment is easily accessible and in good order</p>
+        <p>The equipment is calibrated and there is a system to ensure that calibrations are planned and carried out in a timely fashion</p>
+        <p>The MOT test bay and site meet the Requirements of Authorisation</p>
+              </div>
+            </details>
+          </div>
+             <div class="form-group">
+              <fieldset>
+                  <div class="multiple-choice">
+                      <input id="radio-1" type="radio" name="selectChannel" value="email">
+                      <label for="radio-1">Satisfactory</label>
+                  </div>
+                  <div class="multiple-choice">
+                      <input id="radio-2" type="radio" name="selectChannel" value="text">
+                      <label for="radio-2">Improve</label>
+                  </div>
+                    <div class="multiple-choice">
+                      <input id="radio-3" type="radio" name="selectChannel" value="text">
+                      <label for="radio-3">Unsatisfactory</label>
+                  </div>
+              </fieldset>
+          </div>
+      </div>
+
+
+
+
+        <div class="form-group" style="margin-bottom:10px;">
+            <h3 class="heading-medium">Management Control and Quality Checks</h3>
+            <details role="group">
+              <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Clues for Management Control and Quality Checks?</span></summary>
+              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+                        <p>The VTS staff has a clear understanding of their testing responsibilities and security requirements relevant to the MOT service</p>
+        <p>The AE has an effective Quality Management system that is appropriate to its operation and would identify and rectify failures or weaknesses in test quality</p>
+        <p>The VTS demonstrates a positive culture of quality, communication and improvement</p>
+              </div>
+            </details>
+          </div>
+      <div class="form-group">
+              <fieldset>
+                  <div class="multiple-choice">
+                      <input id="m-radio-1" type="radio" name="selectChannelm" value="email">
+                      <label for="m-radio-1">Satisfactory</label>
+                  </div>
+                  <div class="multiple-choice">
+                      <input id="m-radio-2" type="radio" name="selectChannelm" value="text">
+                      <label for="m-radio-2">Improve</label>
+                  </div>
+                    <div class="multiple-choice">
+                      <input id="m-radio-3" type="radio" name="selectChannelm" value="text">
+                      <label for="m-radio-3">Unsatisfactory</label>
+                  </div>
+              </fieldset>
+          </div>
+    </div>
+
+
+                <div class="form-group" style="margin-bottom:10px;">
+                    <h4 class="heading-medium">People</h4>
+            <details role="group">
+              <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Clues for people?</span></summary>
+              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+                        <p>The AE has a stable and well trained work force.  New recruits are vetted and undergo an appropriate introductory regime and suprvision.</p>
+        <p>All mandatory training requirements are managed and systems are in place to ensure standards in testing and customer service is maintained</p>
+        <p>There are appropriate policies in place to encourage integrity in operation and support to MOT staff</p>
+              </div>
+            </details>
+          </div>
+
+
+          <div class="form-group">
+              <fieldset>
+                   <div class="multiple-choice">
+                                <input id="p-radio-1" type="radio" name="radio-inline-group2" value="Satisfactory">
+                                <label for="p-radio-1">Satisfactory</label>
+                            </div>
+                   <div class="multiple-choice">
+                                <input id="p-radio-2" type="radio" name="radio-inline-group2" value="Improve">
+                                <label for="p-radio-2">Improve</label>
+                            </div>
+                     <div class="multiple-choice">
+                                <input id="p-radio-3" type="radio" name="radio-inline-group2" value="Unsatisfactory">
+                                <label for="p-radio-3">Unsatisfactory</label>
+                            </div>
+              </fieldset>
+          </div>
+    </div>
+
+
+        <div class="form-group" style="margin-bottom:10px;">
+            <h4 class="heading-medium">Compliance Checks</h4>
+            <details role="group">
+              <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Clues for compliance Checks?</span></summary>
+              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+                        <p>Is the AE stated on the VT9 correct </p>
+                        <p>Are the vehicles registered for test on site</p>
+              </div>
+            </details>
+
+          </div>
+
+               <div class="form-group">
+              <fieldset>
+                   <div class="multiple-choice">
+                                <input id="c-radio-1" type="radio" name="radio-inline-group2" value="Satisfactory">
+                                <label for="c-radio-1">Satisfactory</label>
+                            </div>
+                   <div class="multiple-choice">
+                                <input id="c-radio-2" type="radio" name="radio-inline-group2" value="Improve">
+                                <label for="c-radio-2">Improve</label>
+                            </div>
+                     <div class="multiple-choice">
+                                <input id="c-radio-3" type="radio" name="radio-inline-group2" value="Unsatisfactory">
+                                <label for="c-radio-3">Unsatisfactory</label>
+                            </div>
+              </fieldset>
+          </div>
+    </div>
+
+
+
+       <div class="form-group">
+          <h4 class="heading-medium">Did you do a re-inspection?</h4>
+<div class="form-group" style="margin-top: 5px;">
+                        <fieldset>
+                            <div class="multiple-choice">
+                                <input id="r-radio-1" type="radio" name="radio-inline-group1" value="Yes">
+                                <label for="r-radio-1">Yes</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="r-radio-2" type="radio" name="radio-inline-group1" value="No">
+                                <label for="r-radio-2">No</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+    <div class="form-group  ">
+    <fieldset>
+
+<label class="form-label" for="textarea">
+  Advice given
+</label>
+<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5"></textarea>
+
+            </fieldset>
+</div>
+
+
+
+
+
+
+
+
+        </fieldset>
+
+
+
+    <div id="examiner-details" class="panel-indent
+        js-hidden    ">
+        <div class="form-group">
+            <fieldset>
+
+    <div class="form-group ">
+
+        <label for="dvsa-examiners-user-id" class="form-label ">
+
+            DVSA examiner's User ID
+
+                    </label>
+
+
+
+<input type="text" id="dvsa-examiners-user-id" name="dvsa-examiners-user-id" maxlength="100" value="" class="form-control
+        ">
+
+            </div>
+
+            </fieldset>
+        </div>
+    </div>
+
+        <fieldset>
+
+    <div class="form-group ">
+
+        <label for="ae-representatives-user-id" class="form-label ">
+
+            AE representative's User ID
+
+                    </label>
+
+
+
+<input type="text" id="ae-representatives-user-id" name="ae-representatives-user-id" maxlength="50" value="" class="form-control
+        form-control-1-8">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+    <div class="form-group ">
+
+        <label for="ae-representatives-full-name" class="form-label ">
+
+            AE representative's full name (if AE user ID not entered)
+
+                    </label>
+
+
+
+<input type="text" id="ae-representatives-full-name" name="ae-representatives-full-name" maxlength="100" value="" class="form-control
+        ">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+    <div class="form-group ">
+
+        <label for="ae-representatives-role" class="form-label ">
+
+            AE representative's role
+
+                    </label>
+
+
+
+<input type="text" id="ae-representatives-role" name="ae-representatives-role"  maxlength="100" value="" class="form-control
+        ">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+    <div class="form-group ">
+
+        <label for="testers-user-id" class="form-label ">
+
+            Tester's User ID
+
+                    </label>
+
+
+
+<input type="text" id="testers-user-id" name="testers-user-id" maxlength="50" value="" class="form-control
+        form-control-1-8">
+
+            </div>
+
+        </fieldset>
+
+
+<div class="form-group ">
+    <fieldset>
+        <legend class="form-label">
+            Date of assessment                            <span class="form-hint">For example, 31 3 1980</span>
+                                </legend>
+        <div class="form-date">
+
+
+<div class="form-group form-group-day">
+    <label for="date1-day" id="form-group-dayDay" class="">
+            Day
+                <span class="validation-message">
+
+    </span>
+
+    </label>
+
+    <input type="text" id="date1-day" name="dobDay" value="" class="form-control " required="" maxlength="2" title=""></div>
+<div class="form-group form-group-month">
+    <label for="date1-month" id="form-group-monthMonth" class="">
+            Month
+                <span class="validation-message">
+
+    </span>
+
+    </label>
+
+    <input type="text" id="date1-month" name="dobMonth" value="" class="form-control " required="" maxlength="2" title=""></div>
+<div class="form-group form-group-year">
+    <label for="date1-year" id="form-group-yearYear" class="">
+            Year
+                <span class="validation-message">
+
+    </span>
+
+    </label>
+
+    <input type="text" id="date1-year" name="dobYear" value="" class="form-control " required="" maxlength="4" title=""></div>        </div>
+    </fieldset>
+</div>
+
+    <nav class="content-navigation">
+        <button name="submit" id="submit" value="" type="submit" class="button">Continue</button>    <ul class="content-navigation__secondary">
+        <li>
+            <a href="#" id="returnDashboard" class="btn btn-primary">
+                Cancel and return to site details
+            </a>
+        </li>
+    </ul>
+</nav>
+</form>
+
+
+
+                </div>
+            </div>
+
+
+    </div>
+    <!-- /container -->
+</main>
+
+
+
+
+
+
+<footer class="group js-footer" id="footer">
+    <div class="footer-wrapper">
+
+        <div class="footer-categories">
+            <div class="footer-resources--two-thirds">
+                <h2 class="footer-resources__header">Resources on GOV.UK</h2>
+                <ul>
+                    <li>
+                        <a id="resources_0" href="https://www.gov.uk/government/publications/motorcycle-mot-inspection-checklist-vt-29m">
+                            Motorcycle inspection checklist for class 1 and 2 (VT29M)</a>
+                            </li>
+                    <li>
+                        <a id="resources_1" href="https://www.gov.uk/government/publications/mot-inspection-checklist-vt-29">
+                            Vehicle inspection checklist for class 3, 4, 5 and 7 (VT29)</a>
+                            </li>
+                    <li>
+                        <a id="resources_2" href="https://www.gov.uk/government/publications/in-service-exhaust-emission-standards-for-road-vehicles">
+                            In service exhaust emission standards for road vehicles</a>
+                            </li>
+                    <li>
+                        <a id="resources_3" href="https://www.gov.uk/topic/mot/manuals#special-notices">
+                            Special notices</a>
+                            </li>
+            </ul>
+            </div>
+            <div class="footer-resources--one-third">
+                <h2 class="footer-resources__header">MOT manuals and guide</h2>
+                <ul>
+                    <li>
+                        <a id="manuals_0" href="#" target="_blank">
+                                Manual for class 1 and 2 vehicles</a>
+                        </li>
+                            <li>
+                            <a id="manuals_1" href="#" target="_blank">
+                                Manual for class 3, 4, 5, and 7 vehicles</a>
+                        </li>
+                            <li>
+                            <a id="manuals_2" href="https://www.gov.uk/government/publications/mot-testing-guide" target="_blank">
+                                MOT testing guide </a>
+                        </li>
+                    </ul>
+            </div>
+            <hr>
+        </div>
+
+{% endblock %}
