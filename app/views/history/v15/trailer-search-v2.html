@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  Check MOT history
+{% endblock %}
+
+{% block content %}
+
+
+
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+     
+     
+
+     <form action="results-page-trailers" method="post" class="form">
+    <a class="link-back" href="index">Back</a>
+
+    <h1 class="form-title heading-large">Enter registration number or HGV trailer ID</h1>
+
+    <!-- Full name -->
+    <div class="form-group">
+    <h1>
+      <label for="enter-reg">
+        <span class="form-hint">This can either be a registration number or a HGV trailer ID.</span></label>
+        </h1>
+      <input type="text" class="form-control" id="enter-reg" style="text-transform: uppercase;">
+    </div>
+    <div>
+
+    <br>
+
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+    </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
