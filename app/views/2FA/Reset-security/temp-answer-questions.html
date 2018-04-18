@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  MOT testing service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">
+            <span class="heading-secondary">Temporary sign in</span>
+          Sign in without your security card
+        </h1>
+        
+        <form action="sign-in-success" method="post" class="form">
+
+            <fieldset>
+                    <legend class="form-title heading-large" id="question1"></legend>
+                    <div class="form-group">
+                      <label class="form-label" for="User-id">What was your favourite place to visit as a child?</label>
+                      <input type="text" class="form-control form-control-3-4" id="User-id">
+                    </div>
+            </fieldset>
+            
+            <fieldset>
+                    <legend class="form-title heading-large" id="question2"></legend>
+                    <div class="form-group">
+                      <label class="form-label" for="Password">What did you want to be when you grew up?</label>
+                      <input type="text" class="form-control form-control-3-4" id="Password">
+                    </div>
+             </fieldset>
+         
+            <div class="form-group">    
+                <details>
+
+                  <summary><span class="summary">Forgotten your security questions?</span></summary>
+
+                  <div class="panel panel-border-narrow">
+
+                    <p>Call the DVSA helpdesk on <strong class="bold-small">0330 123 5654</strong> to reset your questions.</p>
+                    <p>Opening hours are:</p>
+                    <ul>
+                        <li>Monday to friday, 8am to 8pm</li>
+                        <li>Saturday, 8am to 2pm</li>
+                        <li>Sunday, closed</li>
+                    </ul>
+
+                  </div>
+
+                </details>
+            </div>
+            </form>
+        <div style="margin-top: 30px;"><p><a class="button" href="new-SQs">Continue</a></p></div>
+            
+         <a href="enter-pin">Back</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

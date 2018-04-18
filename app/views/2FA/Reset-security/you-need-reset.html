@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  MOT testing service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+    
+  
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">
+          Reset your account security
+        </h1>
+            
+        <p class="lede">Choose new security questions for your account.</p>
+         
+        <div style="margin-top: 30px;"><p><a class="button" href="new-SQs">Continue</a></p></div>
+            
+         <a href="enter-pin">Cancel and return to sign in to your secuirty card PIN</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
