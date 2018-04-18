@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  MOT testing service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+    
+  
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">
+            <span class="heading-secondary">Sign in</span>
+          Temporary sign in
+        </h1>
+            
+        <p class="lede">If you don’t have your security card available today you can sign in by answering your security questions.</p>
+            <p>You will need to sign in with your security card as soon as you have access to it.</p>
+            <p>If you need a new card then you can order one from your profile, once you’ve signed in.</p>
+         
+        <div style="margin-top: 30px;"><p><a class="button" href="temp-answer-questions">Continue</a></p></div>
+            
+         <a href="enter-pin">Cancel and return to sign in to your secuirty card PIN</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

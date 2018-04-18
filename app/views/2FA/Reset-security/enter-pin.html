@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+  MOT testing service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div id="phase_banner_beta">  
+            {% include "includes/phase_banner_beta.html" %}
+    </div>
+    
+  
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">
+            <span class="heading-secondary">Sign in</span>
+          Your security card PIN
+        </h1>
+            
+        <p class="lede">You are using the card with serial number <strong class="bold"> ZZZZ000000169431</strong>. Press the button on the security card to display the PIN.</p>
+        
+     <form action="#" method="post" class="form">
+         
+        <fieldset>
+            <div class="form-group">    
+            <details>
+
+                  <summary><span class="summary">Where to find the security card PIN</span></summary>
+
+                  <div class="panel panel-border-narrow">
+
+                    <p>
+                       <strong class="bold-small">PIN:</strong> generate a new PIN by pressing the button on the front of the card.
+                    </p>
+
+                  </div>
+
+                </details>
+                </div>
+            <!-- Full name -->
+            <div class="form-group">
+              <label class="form-label" for="card-pin">Security card PIN</label>
+              <input type="text" class="form-control form-control-1-4" id="card-pin">
+            </div>
+            
+            
+            <ul class="list">
+                <li><a href="temp-log-in">Temporary sign in</a></li>
+                <li><a href="#">Lost or damaged security card</a></li>
+            </ul>
+
+
+            <div class="form-group">
+              <input type="submit" class="button" href="#" value="Sign in">
+            </div>
+            
+            <a href="">Cancel and return to sign in</a>
+         
+         </fieldset>
+         
+
+    </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
