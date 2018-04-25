@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+
+{% block content %}
+<main id="content">
+            <div class="phase-banner">
+                <p>
+                    <strong class="phase-tag">BETA</strong>
+                    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+                </p>
+            </div>
+
+            
+            <h1 class="heading-xlarge">
+                <span class="heading-secondary">Create an account</span>
+              Your security questions
+            </h1>
+            <p>These are used to identify you if you forget your password.</p>
+            <form>
+            <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+
+                <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+                    There was a problem with the information you entered:
+                </h2>
+
+                <ul class="error-summary-list">
+                    <li><a href="#">New password - Must not be a common password</a></li>
+                </ul>
+
+            </div>
+                <fieldset>
+                    <legend class="heading-large">First security question</legend>
+                    
+                        <div class="form-group form-group-error"">
+                            <label class="form-label" for="questions">Choose a question</label>
+                                <select class="form-control form-control-1-2" id="questions" name="questions">
+                                            <option value="5" selected="selected">
+                                What did you want to be when you grew up?</option>
+                                                <option value="9">
+                                What was the name of your first pet?</option>
+                                                <option value="1">
+                                Who was your first kiss?</option>
+                                                <option value="7">
+                                Where did you go on your first memorable holiday?</option>
+                                                <option value="8">
+                                Who was your childhood hero?</option>
+                                        </select>
+                        </div>
+                    
+                        <div class="form-group ">
+                            <label for="password" class="form-label">Memorable answer</label>
+                            <input type="password" name="password" id="password" class="form-control" value="">
+                        </div>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend class="heading-large">Second security question</legend>
+                        <div class="form-group">
+                            <label class="form-label" for="questions">Choose a question</label>
+                            <select class="form-control form-control-1-2" id="questions" name="questions">
+                                        <option value="5" selected="selected">
+                            What did you want to be when you grew up?</option>
+                                            <option value="9">
+                            What was the name of your first pet?</option>
+                                            <option value="1">
+                            Who was your first kiss?</option>
+                                            <option value="7">
+                            Where did you go on your first memorable holiday?</option>
+                                            <option value="8">
+                            Who was your childhood hero?</option>
+                            </select>
+                        </div>
+                    <div class="form-group ">
+                            <label for="password" class="form-label">Memorable answer</label>
+                            <input type="password" name="password" id="password" class="form-control" value="">
+                        </div>
+                    </fieldset>
+                
+
+                    <nav class="content-navigation">
+
+                        <a href="review-sqs.html" class="button">Continue</a>
+                    </nav>
+                    <br>
+                    <a href="#">Back</a>
+            </form>
+        </main>
+{% endblock %}
