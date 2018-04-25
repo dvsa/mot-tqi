@@ -159,20 +159,16 @@
             </div>
             
             <h1 class="heading-xlarge">
-                <span class="heading-secondary">Reset your account security</span>
-              Choose new security questions
+                <span class="heading-secondary">Your profile</span>
+              First security question
             </h1>
-            <p class="lede">These are used to identify you if you can not sign in with your secuirty card.</p>
+
             <form>
                 <fieldset>
-                    <legend class="heading-large">First security question</legend>
-                    
                         <div class="form-group">
                             <label class="form-label" for="questions">Choose a question</label>
                                 <select class="form-control form-control-1-2" id="questions" name="questions">
                                             <option value="5" selected="selected">
-                                Please select</option>
-                                            <option value="5">
                                 What did you want to be when you grew up?</option>
                                                 <option value="9">
                                 What was the name of your first pet?</option>
@@ -185,44 +181,17 @@
                                         </select>
                         </div>
                     
-                        <div class="form-group ">
-                            <label for="password" class="form-label">Memorable answer</label>
-                            <input type="password" name="password" id="password" class="form-control" value="">
+                        <div class="form-group">
+                            <label for="SQ-answer" class="form-label">Enter your answer</label>
+                            <input type="SQ-answer" name="SQ-answer" id="SQ-answer" class="form-control" value="">
                         </div>
                     
                 </fieldset>
-                <fieldset>
-                    <legend class="heading-large">Second security question</legend>
-                        <div class="form-group">
-                            <label class="form-label" for="questions">Choose a question</label>
-                            <select class="form-control form-control-1-2" id="questions" name="questions">
-                                        <option value="5" selected="selected">
-                                Please select</option>
-                                        <option value="5">
-                            What did you want to be when you grew up?</option>
-                                            <option value="9">
-                            What was the name of your first pet?</option>
-                                            <option value="1">
-                            Who was your first kiss?</option>
-                                            <option value="7">
-                            Where did you go on your first memorable holiday?</option>
-                                            <option value="8">
-                            Who was your childhood hero?</option>
-                            </select>
-                        </div>
-                    <div class="form-group ">
-                            <label for="password" class="form-label">Memorable answer</label>
-                            <input type="password" name="password" id="password" class="form-control" value="">
-                        </div>
-                    </fieldset>
-                
-
                     <nav class="content-navigation">
-
-                        <a href="review-questions" class="button">Continue</a>
+                        <a href="second-security-question.html" class="button">Continue</a>
                     </nav>
                     <br>
-                    <a href="temp-answer-questions">Back</a>
+                    <a href="#">Back</a>
             </form>
         </main>
 {% endblock %}
