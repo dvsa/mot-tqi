@@ -4,152 +4,8 @@
   GOV.UK prototype kit
 {% endblock %}
 
-{% block service_name %}
-	<nav id="proposition-menu">
-	  <a href="/" id="proposition-name">Bob Thomas Arctor (Tester)</a>
-	  <ul id="proposition-links">
-	    <li><a href="#">Home</a></li>
-	    <li><a href="#">Your profile</a></li>
-	    <li><a href="#">Sign out</a></li>
-	  </ul>
-	</nav>
-{% endblock %}
 
 {% block content %}
-
-<style type="text/css">
-.inline-element {
-    clear: right;
-    padding-right: 45px;
-}
-.inline-element:last-child {
-    padding-right: initial;
-}
-.key-value-list__header {
-	font-family: "nta", Arial, sans-serif;
-	font-size: 24px;
-	line-height: 1.1111111111;
-	font-weight: 700;
-	text-transform: none;
-	margin-top: 1.04167em
-}
-
-@media (max-width: 640px) {
-.key-value-list__header {
-	font-size: 24px;
-	line-height: 1.0416666667;
-}
-}
-
-@media (min-width: 641px) {
-.key-value-list__header {
-	margin-top: 1.25em;
-}
-}
-.key-value-list {
-	margin-top: 30px
-}
-.key-value-list__key, .key-value-list__value, .key-value-list__value--numeric, .key-value-list__value--muted {
-	width: 50%
-}
-.key-value-list__value {
-	font-family: "nta", Arial, sans-serif;
-	font-size: 19px;
-	line-height: 1.3157894737;
-	font-weight: 700;
-	text-transform: none;
-	padding-left: 15px
-}
-
-@media (max-width: 640px) {
-.key-value-list__value {
-	font-size: 16px;
-	line-height: 1.25;
-}
-}
-.key-value-list__item-action {
-	padding-left: 15px
-}
-.key-value-list__value--numeric {
-	font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
-	font-size: 19px;
-	line-height: 1.3157894737;
-	font-weight: 700;
-	text-transform: none;
-	padding-left: 15px;
-	letter-spacing: 0.03em
-}
-
-@media (max-width: 640px) {
-.key-value-list__value--numeric {
-	font-size: 16px;
-	line-height: 1.25;
-}
-}
-.key-value-list__value--muted {
-	color: #6f777b;
-	padding-left: 15px
-}
-.key-value-list__meta {
-	font-family: "nta", Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.25;
-	font-weight: 400;
-	text-transform: none;
-	color: #6f777b;
-	display: block
-}
-
-@media (max-width: 640px) {
-.key-value-list__meta {
-	font-size: 14px;
-	line-height: 1.1428571429;
-}
-}
-.result-table__meta {
-	font-family: "nta", Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.25;
-	font-weight: 400;
-	text-transform: none;
-	color: #6f777b;
-	display: block
-}
-.table-caption {
-	text-align: left;
-}
-.content-navigation {
-    margin-top: 30px;
-}
-.object-svg {
-	display: block;
-	margin-bottom: 30px;
-}
-.data-wrapper {
-	margin-top: 30px;
-	margin-bottom: 15px;
-}
-.data-item.bold-large {
-	padding-bottom: 8px;
-}
-.line-break {
-	display: block;
-}
-.text-center {
-	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 90px;
-	padding-top: 30px;
-	padding-bottom: 60px;
-}
-.download-block {
-	margin-bottom: 60px;
-}
-.column-one-quarter.column-one-fifth {
-	width: 20%;
-}
-</style>
-
 <main id="content">
             <div class="phase-banner">
                 <p>
@@ -157,22 +13,32 @@
                     <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
                 </p>
             </div>
+
             
             <h1 class="heading-xlarge">
-                <span class="heading-secondary">Reset your account security</span>
-              Choose new security questions
+                <span class="heading-secondary">Create an account</span>
+              Your security questions
             </h1>
-            <p class="lede">These are used to identify you if you can not sign in with your secuirty card.</p>
+            <p>These are used to identify you if you forget your password.</p>
             <form>
+            <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+
+                <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+                    There was a problem with the information you entered:
+                </h2>
+
+                <ul class="error-summary-list">
+                    <li><a href="#">New password - Must not be a common password</a></li>
+                </ul>
+
+            </div>
                 <fieldset>
                     <legend class="heading-large">First security question</legend>
                     
-                        <div class="form-group">
+                        <div class="form-group form-group-error"">
                             <label class="form-label" for="questions">Choose a question</label>
                                 <select class="form-control form-control-1-2" id="questions" name="questions">
                                             <option value="5" selected="selected">
-                                Please select</option>
-                                            <option value="5">
                                 What did you want to be when you grew up?</option>
                                                 <option value="9">
                                 What was the name of your first pet?</option>
@@ -197,8 +63,6 @@
                             <label class="form-label" for="questions">Choose a question</label>
                             <select class="form-control form-control-1-2" id="questions" name="questions">
                                         <option value="5" selected="selected">
-                                Please select</option>
-                                        <option value="5">
                             What did you want to be when you grew up?</option>
                                             <option value="9">
                             What was the name of your first pet?</option>
@@ -219,10 +83,10 @@
 
                     <nav class="content-navigation">
 
-                        <a href="review-questions" class="button">Continue</a>
+                        <a href="review-sqs.html" class="button">Continue</a>
                     </nav>
                     <br>
-                    <a href="temp-answer-questions">Back</a>
+                    <a href="#">Back</a>
             </form>
         </main>
 {% endblock %}
