@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+My reminders
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+
+.block-font-xsmall {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286;
+}
+.t-15 {
+  margin-top: 15px;
+}
+.t-30 {
+  margin-top: 30px;
+}
+.t-60 {
+  margin-top: 60px;
+}
+.b-15 {
+  margin-bottom: 15px;
+}
+.b-30 {
+  margin-bottom: 30px;
+}
+.b-60 {
+  margin-bottom: 60px;
+}
+.base-block {
+  border: 1px solid #bfc1c3;
+  background-color: #F8F8F8;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 6px 15px 4px 15px;
+} 
+.base-block-small {
+  padding: 3px 8px;
+  margin-right: 10px;
+}
+.base-block-row {
+  top: -3px;
+  position: relative;
+}
+.info-block {
+  border: 1px solid #005ea5;
+  background-color: #005ea5;
+  color: #FFFFFF;
+}
+.success-block {
+  border: 1px solid #28A197;
+  background-color: #28A197;
+  color: #FFFFFF;
+}
+.warn-block {
+  border: 1px solid #FFBF47;
+  background-color: #FFBF47;
+  color: #0b0c0c;
+}
+.alert-block {
+  border: 1px solid #DF3034;
+  background-color: #DF3034;
+  color: #FFFFFF;
+}
+.link-nav {
+  float: right;
+}
+.link-nav li {
+  display: inline-block;
+  padding: 15px 0 10px 10px;
+  font-size: 16px;
+}
+.govuk-c-table__caption {
+    text-align: left;
+    font-weight: 700;
+}
+.govuk-c-table__header--numeric, .govuk-c-table__cell--numeric {
+    text-align: right;
+}
+.govuk-c-table__header:last-child, .govuk-c-table__cell:last-child {
+    padding-right: 0;
+}
+
+</style>
+
+<main id="content" role="main">
+
+  <a class="link-back" href="enter-reg">Back</a>
+
+  <ul class="link-nav">
+    <li>Hello <span class="bold">Dyfrig</span></li>
+    <li><a href="garage-overview">My reminders</a></li>
+    <li><a href="enter-reg">Find another vehicle</a></li>
+    <li><a href="#">Account settings</a></li>
+    <li><a href="#">Sign out</a></li>
+  </ul>
+
+  <h1 class="heading-large">
+      <span class="heading-secondary">My reminders</span>
+      Remove vehicle from my reminders
+    </div>
+  </h1>
+
+  <div class="text">
+    <div class="lede b-30">Confirm that you want to remove this vehicle from your reminders</div>
+  </div>
+
+  <table class="govuk-c-table b-60">
+    <caption class="govuk-c-table__caption visually-hidden">Remove the following vehicle</caption>
+    <thead class="govuk-c-table__head">
+      <tr class="govuk-c-table__row">
+        <th class="govuk-c-table__header" scope="col">Registration number</th>
+        <th class="govuk-c-table__header" scope="col">Make and model</th>
+        <th class="govuk-c-table__header" scope="col">Status</th>
+        <th class="govuk-c-table__header govuk-c-table__header--numeric" scope="col"><span class="visually-hidden">Action</span></th>
+      </tr>
+    </thead>
+    <tbody class="govuk-c-table__body">
+      <tr class="govuk-c-table__row">
+        <th class="govuk-c-table__header" scope="row">EJ13 YLS</th>
+        <td class="govuk-c-table__cell">Nissan Qashqai</td>
+        <td class="govuk-c-table__cell base-block-row">
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">Tax</span> 
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">MOT</span>
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">Recall</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="notice b-30 text">
+    <i class="icon icon-important">
+      <span class="visually-hidden">Warning</span>
+    </i>
+    <strong class="bold-small">Once removed you wont recieve any further reminders on this vehicle until you save it again to your reminders</strong>
+  </div>
+
+  <p><a href="#" class="button t-30">Remove vehicle reminder</a></p>
+  <p><a href="garage-overview">Cancel and return to my reminders</a></p>
+
+</main>
+
+{% endblock %}

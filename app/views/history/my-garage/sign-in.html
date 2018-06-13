@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+My reminders
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+    input.password { -webkit-text-security: none; }
+    input.password { -webkit-text-security: circle; }
+    input.password { -webkit-text-security: square; }
+    input.password { -webkit-text-security: disc; /* Default */ }
+</style>
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <form action="found-vehicle-signed-in" method="post" class="form">
+        <a class="link-back" href="index">Back</a>
+        <h1 class="form-title heading-large">
+        Sign in to my reminders
+        </h1>
+
+        <!-- Full name -->
+        <div class="form-group">
+          <label class="form-label" for="full-name">Email address</label>
+          <span class="form-hint">This will be your account username</span>
+          <input type="text" class="form-control" id="user-name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="full-name">Password</label>
+          <input type="text" class="form-control password" id="password" type="password">
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Sign in">
+        </div>
+
+        <p><a href="#">Forgotten details</a></p>
+        <p><a href="#">Create an account</a></p>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

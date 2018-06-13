@@ -1,0 +1,260 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+My reminders
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+
+.block-font-xsmall {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286;
+}
+.t-15 {
+  margin-top: 15px;
+}
+.t-30 {
+  margin-top: 30px;
+}
+.t-60 {
+  margin-top: 60px;
+}
+.b-15 {
+  margin-bottom: 15px;
+}
+.b-30 {
+  margin-bottom: 30px;
+}
+.base-block {
+  border: 1px solid #bfc1c3;
+  background-color: #F8F8F8;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 6px 15px 4px 15px;
+} 
+.base-block-small {
+  padding: 3px 8px;
+  margin-right: 10px;
+}
+.base-block-row {
+  top: -3px;
+  position: relative;
+}
+.info-block {
+  border: 1px solid #005ea5;
+  background-color: #005ea5;
+  color: #FFFFFF;
+}
+.success-block {
+  border: 1px solid #28A197;
+  background-color: #28A197;
+  color: #FFFFFF;
+}
+.warn-block {
+  border: 1px solid #FFBF47;
+  background-color: #FFBF47;
+  color: #0b0c0c;
+}
+.alert-block {
+  border: 1px solid #DF3034;
+  background-color: #DF3034;
+  color: #FFFFFF;
+}
+.link-nav {
+  float: right;
+}
+.link-nav li {
+  display: inline-block;
+  padding: 15px 0 10px 10px;
+  font-size: 16px;
+}
+.govuk-c-table__caption {
+    text-align: left;
+    font-weight: 700;
+}
+.govuk-c-table__header--numeric, .govuk-c-table__cell--numeric {
+    text-align: right;
+}
+.govuk-c-table__header:last-child, .govuk-c-table__cell:last-child {
+    padding-right: 0;
+}
+.font-xsmall {
+  font-size: 14px;
+}
+
+</style>
+
+<main id="content" role="main">
+
+  <a class="link-back" href="enter-reg">Back</a>
+
+  <ul class="link-nav">
+    <li>Hello <span class="bold">Dyfrig</span></li>
+    <li>My reminders</li>
+    <li><a href="enter-reg">Find another vehicle</a></li>
+    <li><a href="#">Account settings</a></li>
+    <li><a href="#">Sign out</a></li>
+  </ul>
+
+  <h1 class="heading-large">
+      <span class="heading-secondary">My reminders</span>
+      4 vehicles saved to my reminders
+    </div>
+  </h1>
+
+  <p class="heading-medium">Status overview of saved vehicles</p>
+
+  <div class="grid-row">
+
+    <div class="column-quarter">
+
+      <div class="data">
+        <span class="data-item bold-medium base-block success-block">Tax</span>
+        <span class="data-item font-xsmall">Nothing to report here</span>
+        <span class="font-xsmall">everything seems ok</span>
+      </div>
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block warn-block">Tax</span>
+        <span class="data-item bold-xsmall">Attention required</span>
+        <span class="font-xsmall">expires 30 September 2018</span>
+      </div>
+
+      <div class="data">
+        <span class="data-item bold-medium base-block alert-block">Tax</span>
+        <span class="data-item bold-xsmall">Not taxed</span>
+        <span class="font-xsmall">expired 30 September 2018</span>
+      </div>
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block alert-block">SORN</span>
+        <span class="data-item bold-xsmall">Declared off the road</span>
+        
+      </div>-->
+
+    </div>
+
+    <div class="column-quarter">
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block success-block">MOT</span>
+        <span class="data-item font-xsmall">Nothing to report here</span>
+        <span class="font-xsmall">expires 22 March 2018</span>
+      </div>-->
+
+      <div class="data">
+        <span class="data-item bold-medium base-block warn-block">MOT</span>
+        <span class="data-item bold-xsmall">Attention required</span>
+        <span class="font-xsmall">looks like an MOT expires soon</span>
+      </div>
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block alert-block">MOT</span>
+        <span class="data-item bold-xsmall">No MOT</span>
+        <span class="font-xsmall">expired 22 March 2018</span>
+      </div>-->
+
+    </div>
+
+    <div class="column-quarter">
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block success-block">Recalls</span>
+        <span class="data-item font-xsmall">Nothing to report here</span>
+        <span class="font-xsmall">no outstanding recalls</span>
+      </div>-->
+
+      <div class="data">
+        <span class="data-item bold-medium base-block alert-block">Recalls</span>
+        <span class="data-item bold-xsmall">Attention required</span>
+        <span class="font-xsmall">looks like there's a recall issued</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ACCORDION START-->
+
+  <table class="govuk-c-table">
+    <caption class="govuk-c-table__caption heading-medium">Reminders set for the following 4 vehicles</caption>
+    <thead class="govuk-c-table__head">
+      <tr class="govuk-c-table__row">
+        <th class="govuk-c-table__header" scope="col">Registration number</th>
+        <th class="govuk-c-table__header" scope="col">Make and model</th>
+        <th class="govuk-c-table__header" scope="col">Status</th>
+        <th class="govuk-c-table__header govuk-c-table__header--numeric" scope="col"><span class="visually-hidden">Action</span></th>
+      </tr>
+    </thead>
+    <tbody class="govuk-c-table__body">
+      <tr class="govuk-c-table__row">
+        <th class="govuk-c-table__header" scope="row">EJ13 YLS</th>
+        <td class="govuk-c-table__cell">Nissan Qashqai</td>
+        <td class="govuk-c-table__cell base-block-row">
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">Tax</span> 
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">MOT</span>
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">Recall</span>
+        </td>
+        <td class="govuk-c-table__cell govuk-c-table__cell--numeric"><a href="#">View<span class="visually-hidden"> vehicle</span></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="remove-vehicle">Remove<span class="visually-hidden"> reminder</span></a></td>
+      </tr>
+      <tr class="govuk-c-table__row">
+        <th class="govuk-c-table__header" scope="row">CU07 VGM</th>
+        <td class="govuk-c-table__cell">Renault Clio</td>
+        <td class="govuk-c-table__cell base-block-row">
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">Tax</span> 
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">MOT</span>
+          <span class="block-font-xsmall bold-medium base-block base-block-small alert-block">Recall</span>
+        </td>
+        <td class="govuk-c-table__cell govuk-c-table__cell--numeric"><a href="#">View<span class="visually-hidden"> vehicle</span></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="remove-vehicle">Remove<span class="visually-hidden"> reminder</span></a></td>
+      </tr>
+      <!--<tr class="govuk-c-table__row">
+        <th class="govuk-c-table__header" scope="row">CN58 KXU</th>
+        <td class="govuk-c-table__cell">Ford KA</td>
+        <td class="govuk-c-table__cell base-block-row">
+          <span class="block-font-xsmall bold-medium base-block base-block-small alert-block">Tax</span> 
+          <span class="block-font-xsmall bold-medium base-block base-block-small alert-block">MOT</span>
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">Recalls</span>
+        </td>
+        <td class="govuk-c-table__cell govuk-c-table__cell--numeric"><a href="#">View</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Remove</a></td>
+      </tr>-->
+      <tr class="govuk-c-table__row">
+        <th class="govuk-c-table__header" scope="row">CN58 KXU</th>
+        <td class="govuk-c-table__cell">Ford KA</td>
+        <td class="govuk-c-table__cell base-block-row">
+          
+          <span class="block-font-xsmall bold-medium base-block base-block-small info-block">SORN</span><span class="font-xsmall">Vehicle off the road</span>
+        </td>
+        <td class="govuk-c-table__cell govuk-c-table__cell--numeric"><a href="#">View<span class="visually-hidden"> vehicle</span></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="remove-vehicle">Remove<span class="visually-hidden"> reminder</span></a></td>
+      </tr>
+      <tr class="govuk-c-table__row">
+        <th class="govuk-c-table__header" scope="row">L110 HWN</th>
+        <td class="govuk-c-table__cell">BMW 316</td>
+        <td class="govuk-c-table__cell base-block-row">
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">Tax</span> 
+          <span class="block-font-xsmall bold-medium base-block base-block-small warn-block">MOT</span>
+          <span class="block-font-xsmall bold-medium base-block base-block-small success-block">Recall</span>
+        </td>
+        <td class="govuk-c-table__cell govuk-c-table__cell--numeric"><a href="#">View<span class="visually-hidden"> vehicle</span></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="remove-vehicle">Remove<span class="visually-hidden"> reminder</span></a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ACCORDION END -->
+
+  <a href="enter-reg" class="button t-30">Find another vehicle</a>
+  
+  <!-- test end -->
+
+  <!--<a class="button" href="enter-reg">Check another vehicle</a>-->
+
+</main>
+
+{% endblock %}
+
+

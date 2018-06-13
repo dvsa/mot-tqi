@@ -1,0 +1,169 @@
+{% extends "layout.html" %}
+
+{% block bar_heading %}
+My reminders
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+
+.base-block {
+  border: 1px solid #bfc1c3;
+  background-color: #F8F8F8;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 6px 15px 4px 15px;
+} 
+.info-block {
+  border: 1px solid #005ea5;
+  background-color: #005ea5;
+  color: #FFFFFF;
+}
+.success-block {
+  border: 1px solid #28A197;
+  background-color: #28A197;
+  color: #FFFFFF;
+}
+.warn-block {
+  border: 1px solid #FFBF47;
+  background-color: #FFBF47;
+  color: #0b0c0c;
+}
+.alert-block {
+  border: 1px solid #DF3034;
+  background-color: #DF3034;
+  color: #FFFFFF;
+}
+
+</style>
+
+<main id="content" role="main">
+
+  <a class="link-back" href="enter-reg">Back</a>
+
+  <h1 class="heading-large">
+    <span class="heading-secondary">EJ13YLS</span>
+    Nissan Qashqai
+  </h1>
+
+  <p>White &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;Petrol &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;1598 cc &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;2013 (13 reg)</p>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+
+      <div class="data">
+        <span class="data-item bold-medium base-block success-block">Tax</span>
+        <span class="data-item font-xsmall">Nothing to report here</span>
+        <span class="font-xsmall">expires 30 September 2018</span>
+      </div>
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block warn-block">Tax</span>
+        <span class="data-item bold-xsmall">Attention required</span>
+        <span class="font-xsmall">expires 30 September 2018</span>
+      </div>
+
+      <div class="data">
+        <span class="data-item bold-medium base-block alert-block">Tax</span>
+        <span class="data-item bold-xsmall">Not taxed</span>
+        <span class="font-xsmall">expired 30 September 2018</span>
+      </div>
+
+      <div class="data">
+        <span class="data-item bold-medium base-block alert-block">SORN</span>
+        <span class="data-item bold-xsmall">Declared off the road</span>
+        
+      </div>-->
+
+    </div>
+
+    <div class="column-one-quarter">
+
+      <div class="data">
+        <span class="data-item bold-medium base-block success-block">MOT</span>
+        <span class="data-item font-xsmall">Nothing to report here</span>
+        <span class="font-xsmall">expires 22 March 2018</span>
+      </div>
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block warn-block">MOT</span>
+        <span class="data-item bold-xsmall">Attention required</span>
+        <span class="font-xsmall">expires 22 March 2018</span>
+      </div>
+
+      <div class="data">
+        <span class="data-item bold-medium base-block alert-block">MOT</span>
+        <span class="data-item bold-xsmall">No MOT</span>
+        <span class="font-xsmall">expired 22 March 2018</span>
+      </div>-->
+
+    </div>
+
+    <div class="column-one-quarter">
+
+      <div class="data">
+        <span class="data-item bold-medium base-block success-block">Recalls</span>
+        <span class="data-item font-xsmall">Nothing to report here</span>
+        <span class="font-xsmall">no outstanding recalls</span>
+      </div>
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block alert-block">Recalls</span>
+        <span class="data-item bold-xsmall">Attention required</span>
+        <span class="font-xsmall">check for outstanding recalls</span>
+      </div>-->
+
+    </div>
+
+    <div class="column-one-quarter">
+
+      <div class="data">
+        <span class="data-item bold-medium base-block info-block">Reminders</span>
+        <span class="data-item font-xsmall"><a href="sign-in">Get reminders for this vehicle</a></span>
+      </div>
+
+      <!--<div class="data">
+        <span class="data-item bold-medium base-block success-block">Reminders</span>
+        <span class="data-item font-xsmall">Reminder set for this vehicle</span>
+        <span class="font-xsmall"><a href="#">change reminder settings</a></span>
+      </div>-->
+
+    </div>
+
+  </div>
+
+  <!-- ACCORDION START-->
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">More about this vehicle</h2>
+
+      <h2 class="heading-medium"><a href="vehicle-mot-status-and-history">MOT information and history</a></h2>
+      <p>Shows the mileage recorded at time of test, parts failed and recommendations</p>
+
+      <h2 class="heading-medium"><a href="#">Recall information and history</a></h2>
+      <p>Shows if there is a manufacturer safety recalls on this vehicle</p>
+
+      <h2 class="heading-medium"><a href="#">Vehicle information</a></h2>
+      <p>Vehicle specific information that the DVSA hold for this vehicle</p>
+
+    </div>
+
+  </div>
+
+  <!-- ACCORDION END -->
+
+  <!-- test end -->
+
+  <!--<a class="button" href="enter-reg">Check another vehicle</a>-->
+
+</main>
+
+{% endblock %}
+
+
