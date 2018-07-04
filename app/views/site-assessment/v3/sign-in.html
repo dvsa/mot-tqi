@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% extends "layout.html" %} {% block page_title %} 2FA - GOV.UK prototype {% endblock %} {% block service_name %}
+    <nav id="proposition-menu">
+        <a href="#" id="proposition-name">Bob Thomas Arctor (AEDM)</a>
+        <ul id="proposition-links">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Your profile</a>
+            </li>
+            <li>
+                <a href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>{% endblock %} {% block content %}
+    <link href="https://ci.test.mot-testing.service.gov.uk/assets/stylesheets/dvsa.css" media="screen" rel="stylesheet">
+    <style type="text/css">
+    .c-mailbox-status a {
+       text-decoration: none;
+    }
+    </style>
+    <div class="phase-banner" style="margin: 0 auto; width: 960px;">
+        <p><strong class="phase-tag">BETA</strong> <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span></p>
+    </div>
+    <main id="content">
+        <div class="container">
+            <div class="organisation-logo organisation-logo--md">
+                Driver &amp; Vehicle Standards Agency
+            </div>
+
+            <header class="content-header">
+                <h1><span class="content-header__type"></span> <span class="content-header__title">MOT testing service</span></h1>
+            </header>
+
+            <div class="row contents">
+                <div class="col-lg-12">
+ 
+                    <div class="grid-row">
+                        <div class="__sign-in">
+                            <div class="column-half">
+                                <form action="/login" autocomplete="new-password" id="Login" method="post" name="Login">
+                                    <fieldset>
+                                        <legend class="form-title heading-large">Sign in</legend>
+                                            <input class="form-control form-control-1-2" id="IDToken1" name="IDToken1" style="width: 1px; position: absolute; left: -9999px;" tabindex="-1" type="text" value=""> 
+                                            <input autocomplete="off" class="form-control form-control-1-2" id="IDToken2" name="IDToken2" style="width: 1px; position: absolute; left: -9999px;" tabindex="-1" type="password" value="">
+
+                                        <div class="form-group form-group">
+                                            <label class="form-label" for="_tid10d039122">User ID</label> 
+                                            <input class="form-control form-control-1-2" id="_tid10d039122" name="_tid10d039122" type="text" value="">
+                                        </div>
+
+                                        <div class="form-group form-group">
+                                            <label class="form-label" for="_tid20d039122">Password</label> 
+                                            <input autocomplete="off" class="form-control form-control-1-2" id="_tid20d039122" name="_tid20d039122" type="password" value="">
+                                        </div>
+                                        <input name="_csrf_token" type="hidden" value="A504D619-3279-7377-F91C-7622F9D778CE"> 
+                                        <input id="goto" name="goto" type="hidden" value="aHR0cHM6Ly9jaS50ZXN0Lm1vdC10ZXN0aW5nLnNlcnZpY2UuZ292LnVrOjQ0My8=">
+                                    </fieldset>
+
+                                    <a href="#" id="forgotten-or-change-password">Forgotten your password?</a>
+                                    <nav class="content-navigation">
+                                        <a href="index.html">
+                                            <input class="button" id="submitSiteSearch" name="" type="button" value="Sign in"></a>
+                                    </nav>
+                                    <input name="IDButton" style="display: none;" type="hidden">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="column-half">
+                            <h3 class="heading-medium">Sign in help</h3>
+                            <details role="group">
+                                <summary aria-controls="details-content-3" aria-expanded="true" role="button" tabindex="0">
+                                    <span class="summary">Lost, forgotten or damaged security card</span>
+                                </summary>
+                                <div aria-hidden="false" class="panel panel-indent" id="details-content-3" style="display: block;">
+                                    <p>Sign in with your user ID and password. You’ll then see an option to sign in without your card and order a new one if you need to.</p>
+                                </div>
+                            </details>
+                            <details role="group">
+                                <summary aria-controls="details-content-0" aria-expanded="true" role="button" tabindex="0">
+                                    <span class="summary" id="do-not-have-account-section">Don't have an account</span>
+                                </summary>
+                                <div aria-hidden="false" class="panel panel-indent" id="details-content-0" style="display: block;">
+                                    <p><a href="/account/register" id="create-an-account">Create a new account</a> for the MOT testing service. Only do this if you don’t already have one.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /container -->
+    </main>
+
+
+    <footer class="group js-footer" id="footer">
+        <div class="footer-wrapper">
+            <div class="footer-categories">
+                <div class="footer-resources--two-thirds">
+                    <h2 class="footer-resources__header">Resources on GOV.UK</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/motorcycle-mot-inspection-checklist-vt-29m" id="resources_0">Motorcycle inspection checklist for class 1 and 2 (VT29M)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/mot-inspection-checklist-vt-29" id="resources_1">Vehicle inspection checklist for class 3, 4, 5 and 7 (VT29)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/in-service-exhaust-emission-standards-for-road-vehicles" id="resources_2">In service exhaust emission standards for road vehicles</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.uk/topic/mot/manuals#special-notices" id="resources_3">Special notices</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-resources--one-third">
+                    <h2 class="footer-resources__header">MOT manuals and guide</h2>
+                    <ul>
+                        <li>
+                            <a href="#" id="manuals_0" target="_blank">Manual for class 1 and 2 vehicles</a>
+                        </li>
+                        <li>
+                            <a href="#" id="manuals_1" target="_blank">Manual for class 3, 4, 5, and 7 vehicles</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/mot-testing-guide" id="manuals_2" target="_blank">MOT testing guide</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+            </div>{% endblock %}
+        </div>
+    </footer>
+</body>
+</html>
