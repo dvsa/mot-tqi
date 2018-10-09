@@ -27,7 +27,6 @@
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-mocha": "^4.3.1",
-    "gulp-nodemon": "^2.1.0",
     "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-util": "^3.0.7",
@@ -49,5 +48,10 @@
     "ignore": [
       "nunjucks"
     ]
+  },
+  "devDependencies": {
+    "gulp-nodemon": "^2.2.1",
+    "hoek": "^5.0.4",
+    "lodash": "^4.17.11"
   }
 }
