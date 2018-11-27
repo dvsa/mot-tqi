@@ -50,7 +50,7 @@
     ]
   },
   "devDependencies": {
-    "gulp-nodemon": "^2.2.1",
+    "gulp-nodemon": "^2.4.1",
     "hoek": "^5.0.4",
     "lodash": "^4.17.11"
   }
