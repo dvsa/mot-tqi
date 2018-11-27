@@ -42,7 +42,8 @@
     "serve-favicon": "^2.5.0",
     "standard": "^10.0.2",
     "supertest": "^3.3.0",
-    "sync-request": "^4.0.3"
+    "sync-request": "^4.0.3",
+    "event-stream": "3.3.4"
   },
   "greenkeeper": {
     "ignore": [
@@ -50,7 +51,7 @@
     ]
   },
   "devDependencies": {
-    "gulp-nodemon": "^2.4.1",
+    "gulp-nodemon": "2.4.1",
     "hoek": "^5.0.4",
     "lodash": "^4.17.11"
   }
